@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+/* Palette (color tokens) comes from the shared canonical ./lib/tokens.css,
+   imported first in index.jsx. Only app-specific tokens live here — never
+   redeclare a standard palette token (edit .common/css/tokens.css + re-sync). */
+:root, :root[data-theme="light"] { --bg-thumb: #dde1ec; --locked: #1a8ac1; }
+:root[data-theme="dark"]         { --bg-thumb: #0a0b10; --locked: #6bc8ff; }
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; margin: 0; }
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+.mono { font-family: 'JetBrains Mono', 'Fira Code', monospace; }
+
+/* Dialog (modal) chrome is provided by the shared ./lib/dialog.css (imported in index.jsx). */
+
+/* Header bar + button chrome is provided by the shared ./lib/chrome.css (imported in index.jsx). */
+
+/* ─── Main scroll area ───────────────────────────────────────────────── */
+.workspace {
+  padding: 16px 20px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+.main-col {
+  flex: 1;
+  min-width: 0;
+}
+.unmatched-col {
+  width: 320px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 0; /* .workspace is the scroll container now, already below the header */
+  max-height: calc(100vh - 112px);
+  overflow-y: auto;
+}
+@media (max-width: 1100px) {
+  .unmatched-col { width: 240px; }
+}
+.empty {
+  margin: 80px auto; max-width: 520px; text-align: center;
+  color: var(--text-dim);
+}
+.empty h2 { color: var(--text); margin-bottom: 8px; font-weight: 600; }
+.empty p  { line-height: 1.5; }
+.empty code { background: var(--bg-elev); padding: 2px 6px; border-radius: 4px;
+              font-family: 'JetBrains Mono', monospace; font-size: 12px; }
+
+/* ─── Chapter section ────────────────────────────────────────────────── */
+.chapter {
+  margin-bottom: 18px;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.chapter.locked { border-color: var(--locked); box-shadow: 0 0 0 1px rgba(107,200,255,.15) inset; }
+.chapter.reorder-before { box-shadow: 0 -3px 0 var(--accent); }
+.chapter.reorder-after  { box-shadow: 0  3px 0 var(--accent); }
+.chapter-head {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 14px;
+  background: linear-gradient(180deg, rgba(255,255,255,.02), transparent);
+  border-bottom: 1px solid var(--border);
+  user-select: none;
+}
+.chapter-head .grip { cursor: grab; color: var(--text-mute); font-size: 18px; line-height: 1; }
+.chapter-head .grip:active { cursor: grabbing; }
+.chapter-head .collapse-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 4px 6px; border-radius: 4px;
+  background: var(--bg-row); border: 1px solid var(--border-strong);
+  color: var(--text-dim); cursor: pointer;
+}
+.chapter-head .collapse-btn:hover { color: var(--text); }
+.chapter.collapsed .chapter-head { border-bottom: none; }
+.chapter-head .label { font-weight: 700; letter-spacing: .3px; }
+.chapter-head .chapter-count { color: var(--text-mute); font-size: 12px; }
+.chapter-head-actions {
+  margin-left: auto;
+  display: inline-flex; align-items: center; gap: 6px;
+}
+
+.chapter-head .gap-badge {
+  font-size: 11px; color: var(--warn);
+  background: rgba(196,122,19,.12); border: 1px solid rgba(196,122,19,.35);
+  padding: 1px 8px; border-radius: 4px;
+  font-family: 'JetBrains Mono', monospace;
+}
+.chapter-body { padding: 6px; }
+.chapter.drop-target .chapter-body { background: rgba(124,111,255,.06); }
+
+/* ─── Shot row ────────────────────────────────────────────────────────── */
+.shot {
+  display: flex; align-items: center; gap: 10px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  margin: 2px 0;
+  background: var(--bg-row);
+  border: 1px solid transparent;
+  transition: background .1s, border-color .1s, transform .08s;
+}
+.shot:hover  { background: var(--bg-hov); }
+.shot.dragging { opacity: .35; }
+.shot.drop-before { border-top-color: var(--accent); box-shadow: 0 -2px 0 var(--accent); }
+.shot.drop-after  { border-bottom-color: var(--accent); box-shadow: 0 2px 0 var(--accent); }
+.shot.drop-into   { border-color: var(--accent); background: rgba(124,111,255,.12); }
+
+.thumb { cursor: grab; }
+.thumb:active { cursor: grabbing; }
+.thumb.drop-before-thumb { box-shadow: -2px 0 0 var(--accent); }
+.thumb.drop-after-thumb  { box-shadow:  2px 0 0 var(--accent); }
+
+.shot .grip {
+  cursor: grab; color: var(--text-mute); font-size: 18px; line-height: 1;
+  padding: 4px 2px;
+}
+.shot .grip:active { cursor: grabbing; }
+.shot .id {
+  font-family: 'JetBrains Mono', monospace; font-weight: 600;
+  font-size: 16px; color: var(--text);
+  min-width: 84px;
+  letter-spacing: .5px;
+}
+.shot .id .dim { color: var(--text-mute); }
+.shot .thumbs { display: flex; gap: 6px; flex: 1; flex-wrap: wrap; }
+.shot .meta {
+  font-size: 11px; color: var(--text-mute);
+  min-width: 120px; text-align: right;
+}
+.shot .meta .alts { color: var(--text-dim); }
+
+.thumb {
+  width: 96px; height: 64px;
+  background: var(--bg-thumb);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.thumb img, .thumb video {
+  width: 100%; height: 100%; object-fit: cover;
+}
+.thumb .badge {
+  position: absolute; top: 2px; left: 2px;
+  font-family: 'JetBrains Mono', monospace; font-size: 10px;
+  background: rgba(0,0,0,.7); color: white;
+  padding: 1px 4px; border-radius: 3px;
+}
+.thumb .ext {
+  position: absolute; bottom: 2px; right: 2px;
+  font-family: 'JetBrains Mono', monospace; font-size: 9px;
+  background: rgba(0,0,0,.7); color: white;
+  padding: 1px 4px; border-radius: 3px; text-transform: uppercase;
+}
+.thumb .extra {
+  position: absolute; bottom: 2px; left: 2px;
+  font-size: 9px;
+  background: rgba(0,0,0,.7); color: var(--text-dim);
+  padding: 1px 4px; border-radius: 3px;
+  max-width: 70%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.thumb.placeholder {
+  color: var(--text-mute); font-size: 11px;
+  font-family: 'JetBrains Mono', monospace;
+}
+.thumb .preview-btn {
+  position: absolute; top: 2px; right: 2px;
+  width: 22px; height: 22px;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(0,0,0,.7); color: white;
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 50%;
+  font-size: 10px; line-height: 1;
+  cursor: pointer;
+  opacity: 0; transition: opacity .12s, background .12s;
+  padding: 0;
+}
+.thumb:hover .preview-btn { opacity: 1; }
+.thumb .preview-btn:hover { background: var(--accent); }
+
+/* ─── Pile (stacked same-V files) ─────────────────────────────────────── */
+.pile {
+  position: relative;
+  width: 96px; height: 64px;
+  flex-shrink: 0;
+  cursor: grab;
+  /* Back cards offset horizontally and may extend beyond width - let them show. */
+  overflow: visible;
+  margin-right: 12px; /* room for the deepest back-card peek so siblings don't overlap */
+}
+.pile:active { cursor: grabbing; }
+.pile-card {
+  position: absolute; top: 0; left: 0;
+  width: 96px; height: 64px;
+  background: var(--bg-thumb);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.pile-card.pile-back {
+  background: var(--bg-hov);
+}
+.pile-card.pile-front {
+  display: flex; align-items: center; justify-content: center;
+}
+.pile-card.pile-front img, .pile-card.pile-front video {
+  width: 100%; height: 100%; object-fit: cover;
+}
+.pile-card.pile-front .badge,
+.pile-card.pile-front .ext,
+.pile-card.pile-front .preview-btn { position: absolute; }
+.pile-card.pile-front .badge { top: 2px; left: 2px;
+  font-family: 'JetBrains Mono', monospace; font-size: 10px;
+  background: rgba(0,0,0,.7); color: white; padding: 1px 4px; border-radius: 3px;
+}
+.pile-card.pile-front .ext { bottom: 2px; right: 2px;
+  font-family: 'JetBrains Mono', monospace; font-size: 9px;
+  background: rgba(0,0,0,.7); color: white; padding: 1px 4px; border-radius: 3px; text-transform: uppercase;
+}
+.pile-card.pile-front .preview-btn { top: 2px; right: 2px;
+  width: 22px; height: 22px;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(0,0,0,.7); color: white;
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 50%; font-size: 10px; line-height: 1; cursor: pointer;
+  opacity: 0; transition: opacity .12s, background .12s; padding: 0;
+}
+.pile:hover .pile-card.pile-front .preview-btn { opacity: 1; }
+.pile-card.pile-front .preview-btn:hover { background: var(--accent); }
+.pile-count {
+  position: absolute; bottom: 2px; left: 2px;
+  font-size: 10px; font-weight: 700;
+  background: var(--accent); color: white;
+  padding: 1px 5px; border-radius: 3px;
+}
+.pile.drop-before-thumb { box-shadow: -2px 0 0 var(--accent); }
+.pile.drop-after-thumb  { box-shadow:  2px 0 0 var(--accent); }
+
+/* ─── Add chapter row ─────────────────────────────────────────────────── */
+.add-chapter-row {
+  display: flex; justify-content: center;
+  margin: 12px 0 8px;
+}
+
+/* ─── Unmatched section ───────────────────────────────────────────────── */
+.unmatched {
+  padding: 12px 14px;
+  background: rgba(255,184,107,.06);
+  border: 1px dashed var(--warn);
+  border-radius: 8px;
+}
+.unmatched h3 { margin: 0 0 10px; color: var(--warn); font-size: 13px; font-weight: 600; }
+.unmatched-hint { color: var(--text-mute); font-size: 11px; font-weight: 400; }
+.unmatched-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 8px;
+}
+.unmatched-card {
+  background: var(--bg-row);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px;
+  cursor: grab;
+  display: flex; flex-direction: column; gap: 6px;
+  transition: background .1s, border-color .1s, transform .08s;
+}
+.unmatched-card:hover { background: var(--bg-hov); border-color: var(--border-strong); }
+.unmatched-card:active { cursor: grabbing; }
+.unmatched-card .thumb { width: 100%; height: 78px; }
+.unmatched-name {
+  font-size: 11px; color: var(--text-dim);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+
