@@ -1,4 +1,4 @@
-// app-icon tag for icons-cockpit (do not remove): data-icon="yaiol:video-shot-sequencer" -> res/icons/custom/apps/video-shot-sequencer.svg
+// data-icon="yaiol:video-shot-sequencer"
 process.noDeprecation = true;
 import { app, BrowserWindow, Menu, dialog, shell } from "electron";
 import path from "path";
