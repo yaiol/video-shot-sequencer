@@ -1,7 +1,7 @@
 {
   "name": "video-shot-sequencer",
   "productName": "Video Shot Sequencer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "description": "Sequence and renumber video shot files via drag-and-drop",
   "private": true,
@@ -29,16 +29,16 @@
     "express": "^5.2.1"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^6.0.3",
-    "concurrently": "^10.0.3",
-    "electron": "^42.5.0",
+    "@vitejs/plugin-react": "^6.1.0",
+    "concurrently": "^10.0.5",
+    "electron": "^43.4.1",
     "electron-builder": "^26.15.3",
     "electron-is-dev": "^3.0.1",
-    "lucide-react": "^1.21.0",
-    "react": "^19.2.7",
-    "react-dom": "^19.2.7",
-    "vite": "^8.1.0",
-    "wait-on": "^9.0.10"
+    "lucide-react": "^1.33.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "vite": "^8.2.2",
+    "wait-on": "^9.1.0"
   },
   "build": {
     "appId": "com.yaiol.video-shot-sequencer.app",

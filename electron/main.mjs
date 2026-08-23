@@ -8,6 +8,7 @@ import express from "express";
 import { fileURLToPath } from "node:url";
 import pkg from "../package.json" with { type: "json" };
 import { mark, dumpStartupTiming } from "./startup-timing.mjs";
+import { lastDir, rememberDir } from "./dialog-memory.mjs";
 mark("electron boot + module imports");
 
 // ESM has no __dirname - derive it from import.meta.url.
@@ -176,9 +177,11 @@ function startServer(callback) {
     const { title } = req.body || {};
     const result = await dialog.showOpenDialog(mainWindow, {
       title,
+      defaultPath: lastDir("open-folder"),
       properties: ['openDirectory'],
     });
     if (result.canceled || !result.filePaths.length) { res.json(null); return; }
+    rememberDir("open-folder", result.filePaths[0]);
     res.json({ folder: result.filePaths[0] });
   });
 

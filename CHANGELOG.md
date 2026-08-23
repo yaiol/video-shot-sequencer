@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.3 — 2026-08-23
+
+- The folder picker now opens where you last chose a folder, instead of starting in Downloads every time
+- Open the update notice's "What's new" and "Download" links in your own interface language, instead of only English, French, Spanish or German
+- Point the update notice's "What's new" link at the current release-notes address, so it no longer lands on a dead page
+- Emit the per-language translation chunks into a lang/ subfolder, so the bundler can analyse the dynamic import instead of guessing
+- Update Electron to 43 and refresh all other dependencies
+- Rename vite.config.js to vite.config.mjs
+
 ## 1.0.2 — 2026-08-17
 
 - Fix the release build failing on GitHub — the pre-build step reached outside the repository for the translation splitter, which exists only in the local workspace
