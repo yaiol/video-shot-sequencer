@@ -1,6 +1,57 @@
-# Video Shot Sequencer
+<p align="center">
+  <img src="docs/assets/logo.png" alt="Video Shot Sequencer" width="110" height="110">
+</p>
 
-Reorder your video shots by dragging - and let the app renumber every file on disk to match.
+<h1 align="center">Video Shot Sequencer</h1>
+
+<div align="center">
+  <strong>Drag the shots. The files renumber themselves.</strong><br>
+  Bulk renumber your numbered working files on disk, in one safe two-phase pass.
+</div>
+
+<br>
+
+<!-- readme:nav -->
+
+<div align="center">
+  <a href="../../releases/latest"><img src="https://img.shields.io/github/v/release/yaiol/video-shot-sequencer?color=5a4fff&label=release&style=flat-square" alt="Release"></a>
+  <a href="../../releases"><img src="https://img.shields.io/github/downloads/yaiol/video-shot-sequencer/total?color=5a4fff&label=downloads&style=flat-square" alt="Downloads"></a>
+</div>
+
+<h3 align="center">
+  <a href="https://apps.yaiol.com/en/p/video-shot-sequencer/">Website</a>
+  <span>&nbsp;·&nbsp;</span>
+  <a href="#install">Install</a>
+  <span>&nbsp;·&nbsp;</span>
+  <a href="#what-it-is">Features</a>
+  <span>&nbsp;·&nbsp;</span>
+  <a href="#documentation">Documentation</a>
+  <span>&nbsp;·&nbsp;</span>
+  <a href="#build-from-source">Development</a>
+</h3>
+
+<div align="center">
+  <sub><a href="https://apps.yaiol.com/en/p/video-shot-sequencer/help/"><b>Help in 28 languages</b></a></sub>
+</div>
+
+<!-- /readme:nav -->
+
+---
+
+<p align="center">
+  <img src="docs/assets/hero.png" alt="Video Shot Sequencer showing chapters of shots with thumbnail strips, mid-reorder" width="900">
+</p>
+
+---
+
+## Install
+
+| Windows | macOS | Linux |
+|:---:|:---:|:---:|
+| [![Windows](https://img.shields.io/badge/Windows-.exe-5a4fff?style=for-the-badge&logo=windows&logoColor=white)](../../releases/latest) | [![macOS](https://img.shields.io/badge/macOS-.dmg-5a4fff?style=for-the-badge&logo=apple&logoColor=white)](../../releases/latest) | [![Linux](https://img.shields.io/badge/Linux-.AppImage-5a4fff?style=for-the-badge&logo=linux&logoColor=white)](../../releases/latest) |
+| x64 installer | Intel and Apple Silicon | portable AppImage |
+
+> **Windows note:** SmartScreen may warn on first launch because the app is not code-signed. Click "More info", then "Run anyway".
 
 ---
 
@@ -22,11 +73,14 @@ The folder on disk is always the source of truth - the app is a helper, not the 
 
 ---
 
-## Download
+## Documentation
 
-Pre-built installers are available on the [Releases](../../releases) page (Windows `.exe`, macOS `.dmg`, Linux `.AppImage`).
-
-> **Windows note:** SmartScreen may warn on first launch because the app is not code-signed. Click "More info", then "Run anyway".
+| | |
+|---|---|
+| **User manual** | [Read it online](https://apps.yaiol.com/en/p/video-shot-sequencer/help/) |
+| **Printable PDF** | attached to each [release](../../releases/latest) |
+| **What's new** | [Release notes](https://apps.yaiol.com/en/p/video-shot-sequencer/help/releases/) |
+| **Product page** | [apps.yaiol.com](https://apps.yaiol.com/en/p/video-shot-sequencer/) |
 
 ---
 
@@ -47,10 +101,20 @@ npm run dist:linux  # Linux AppImage
 
 ---
 
-## Overview
-Video Shot Sequencer is an Electron app: a React renderer (built with Vite) over an Electron main process that runs a small local Express server for folder scanning, file streaming, and batch renames. There is no database - the folder on disk is the entire state, and per-folder configuration lives in a `vss.ini` file beside the media.
+## Architecture
 
-### The naming convention
+An Electron app: a React renderer (built with Vite) over an Electron main process that runs a small local Express server for folder scanning, file streaming, and batch renames. There is no database - the folder on disk is the entire state, and per-folder configuration lives in a `vss.ini` file beside the media.
+
+| Layer | Technology |
+|-------|-----------|
+| UI framework | React 19 |
+| Desktop shell | Electron |
+| Local API | Express 5 |
+| Build tool | Vite |
+| Packaging | Electron Builder |
+
+<details>
+<summary><b>The naming convention</b></summary>
 
 The app understands files named `CCSVExtra.ext`:
 
@@ -62,7 +126,10 @@ The app understands files named `CCSVExtra.ext`:
 
 With the defaults, `0001.mp4` is chapter `00`, slot `0`, version `1`; `0020E.jpg` is chapter `00`, slot `2`, version `0`, extra `E`. The digit widths are stored per folder in `vss.ini`.
 
-### The data model
+</details>
+
+<details>
+<summary><b>The data model</b></summary>
 
 - **Shot** = `(chapter, slot)` - the unit of sequencing.
 - **File** belongs to one shot, distinguished within it by version + extra + extension.
@@ -70,30 +137,26 @@ With the defaults, `0001.mp4` is chapter `00`, slot `0`, version `1`; `0020E.jpg
 
 The app reads a folder, groups files by shot, shows each shot as a row with a thumbnail strip of its files, and lets you drag shots to reorder. Reordering renumbers the shots and renames the underlying files.
 
-### Lock vs. gap-preservation
+</details>
+
+<details>
+<summary><b>Lock vs. gap-preservation, and the two-phase rename</b></summary>
 
 Two orthogonal concerns govern how shots renumber:
 
 - **Lock** (per chapter) controls *whether* a chapter can change. A locked chapter rejects every operation that would touch it - no drops in or out, no internal reorder, no chapter-reorder of itself.
 - **Gap-preservation** (project-wide) controls *how* slot numbers are assigned when something does change. With it on (the default), manual gaps between slot numbers survive every operation; with it off, slots are consolidated to `0..N-1` on every drop.
 
-### Two-phase rename
-
 Reordering never touches disk immediately - drags queue *pending* renames in the app. When you commit, the whole batch is applied in two phases: every file is first moved to a temporary name, then from the temporary name to its final one. This guarantees that two files swapping numbers can never collide mid-rename.
 
-### Tech stack
-
-| Layer | Technology |
-|-------|-----------|
-| UI framework | React 19 |
-| Desktop shell | Electron |
-| Local API | Express 5 |
-| Build tool | Vite |
-| Packaging | Electron Builder |
+</details>
 
 ---
 
-## License / links
-Video Shot Sequencer is part of [yaiol Applications](https://apps.yaiol.com).
+## License
 
 Released under the [MIT License](LICENSE).
+
+<div align="center">
+  <sub>Video Shot Sequencer is part of <a href="https://apps.yaiol.com">yaiol Applications</a>.</sub>
+</div>
