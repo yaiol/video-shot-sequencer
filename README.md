@@ -19,7 +19,7 @@
 </div>
 
 <h3 align="center">
-  <a href="https://apps.yaiol.com/en/p/video-shot-sequencer/">Website</a>
+  <a href="https://apps.yaiol.com/p/video-shot-sequencer/">Website</a>
   <span>&nbsp;·&nbsp;</span>
   <a href="#install">Install</a>
   <span>&nbsp;·&nbsp;</span>
@@ -31,7 +31,7 @@
 </h3>
 
 <div align="center">
-  <sub><a href="https://apps.yaiol.com/en/p/video-shot-sequencer/help/"><b>Help in 28 languages</b></a></sub>
+  <sub><a href="https://apps.yaiol.com/p/video-shot-sequencer/help/"><b>Help in 28 languages</b></a></sub>
 </div>
 
 <!-- /readme:nav -->
@@ -77,10 +77,10 @@ The folder on disk is always the source of truth - the app is a helper, not the 
 
 | | |
 |---|---|
-| **User manual** | [Read it online](https://apps.yaiol.com/en/p/video-shot-sequencer/help/) |
+| **User manual** | [Read it online](https://apps.yaiol.com/p/video-shot-sequencer/help/) |
 | **Printable PDF** | attached to each [release](../../releases/latest) |
-| **What's new** | [Release notes](https://apps.yaiol.com/en/p/video-shot-sequencer/help/releases/) |
-| **Product page** | [apps.yaiol.com](https://apps.yaiol.com/en/p/video-shot-sequencer/) |
+| **What's new** | [Release notes](https://apps.yaiol.com/p/video-shot-sequencer/help/releases/) |
+| **Product page** | [apps.yaiol.com](https://apps.yaiol.com/p/video-shot-sequencer/) |
 
 ---
 
