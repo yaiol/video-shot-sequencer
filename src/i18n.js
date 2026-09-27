@@ -39,19 +39,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "Compact slots on drop",
     tipHdrCompactAll:                       "Compact slot gaps in all chapters",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Settings",
-    tabDlgSettingsDisplay:                  "Display",
-    tabDlgSettingsAbout:                    "About",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Settings",
+    tipStgBack:                             "Back",
+    tabStgDisplay:                          "Display",
+    tabStgAbout:                            "About",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Language",
-    lblDlgSettingsDisplayTheme:             "Theme",
-    btnDlgSettingsDisplayThemeDark:         "Dark",
-    btnDlgSettingsDisplayThemeLight:        "Light",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Language",
+    lblStgDisplayTheme:                     "Theme",
+    btnStgDisplayThemeDark:                 "Dark",
+    btnStgDisplayThemeLight:                "Light",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "sequence and renumber video shot files via drag-and-drop.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "sequence and renumber video shot files via drag-and-drop.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Chapter",
@@ -138,19 +139,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "Compacter les emplacements au dépôt",
     tipHdrCompactAll:                       "Compacter les espacements des emplacements dans tous les chapitres",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Paramètres",
-    tabDlgSettingsDisplay:                  "Affichage",
-    tabDlgSettingsAbout:                    "À propos",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Paramètres",
+    tipStgBack:                             "Retour",
+    tabStgDisplay:                          "Affichage",
+    tabStgAbout:                            "À propos",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Langue",
-    lblDlgSettingsDisplayTheme:             "Thème",
-    btnDlgSettingsDisplayThemeDark:         "Sombre",
-    btnDlgSettingsDisplayThemeLight:        "Clair",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Langue",
+    lblStgDisplayTheme:                     "Thème",
+    btnStgDisplayThemeDark:                 "Sombre",
+    btnStgDisplayThemeLight:                "Clair",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "Séquencez et renumérotez les fichiers de séquences vidéo par glisser-déposer.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "Séquencez et renumérotez les fichiers de séquences vidéo par glisser-déposer.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Chapitre",
@@ -236,19 +238,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "Slots beim Ablegen komprimieren",
     tipHdrCompactAll:                       "Slot-Lücken in allen Kapiteln komprimieren",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Einstellungen",
-    tabDlgSettingsDisplay:                  "Anzeige",
-    tabDlgSettingsAbout:                    "Über",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Einstellungen",
+    tipStgBack:                             "Zurück",
+    tabStgDisplay:                          "Anzeige",
+    tabStgAbout:                            "Über",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Sprache",
-    lblDlgSettingsDisplayTheme:             "Design",
-    btnDlgSettingsDisplayThemeDark:         "Dunkel",
-    btnDlgSettingsDisplayThemeLight:        "Hell",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Sprache",
+    lblStgDisplayTheme:                     "Design",
+    btnStgDisplayThemeDark:                 "Dunkel",
+    btnStgDisplayThemeLight:                "Hell",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "Video-Shot-Dateien per Drag-and-drop sequenzieren und neu nummerieren.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "Video-Shot-Dateien per Drag-and-drop sequenzieren und neu nummerieren.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Kapitel",
@@ -334,19 +337,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "Compactar ranuras al soltar",
     tipHdrCompactAll:                       "Compactar espacios de ranura en todos los capítulos",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Configuración",
-    tabDlgSettingsDisplay:                  "Pantalla",
-    tabDlgSettingsAbout:                    "Acerca de",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Configuración",
+    tipStgBack:                             "Atrás",
+    tabStgDisplay:                          "Pantalla",
+    tabStgAbout:                            "Acerca de",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Idioma",
-    lblDlgSettingsDisplayTheme:             "Tema",
-    btnDlgSettingsDisplayThemeDark:         "Oscuro",
-    btnDlgSettingsDisplayThemeLight:        "Claro",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Idioma",
+    lblStgDisplayTheme:                     "Tema",
+    btnStgDisplayThemeDark:                 "Oscuro",
+    btnStgDisplayThemeLight:                "Claro",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "Secuencia y renumeración de archivos de tomas de vídeo mediante arrastrar y soltar.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "Secuencia y renumeración de archivos de tomas de vídeo mediante arrastrar y soltar.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Capítulo",
@@ -432,19 +436,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "Compactar slots ao soltar",
     tipHdrCompactAll:                       "Compactar espaços de slot em todos os capítulos",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Configurações",
-    tabDlgSettingsDisplay:                  "Exibição",
-    tabDlgSettingsAbout:                    "Sobre",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Configurações",
+    tipStgBack:                             "Voltar",
+    tabStgDisplay:                          "Exibição",
+    tabStgAbout:                            "Sobre",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Idioma",
-    lblDlgSettingsDisplayTheme:             "Tema",
-    btnDlgSettingsDisplayThemeDark:         "Escuro",
-    btnDlgSettingsDisplayThemeLight:        "Claro",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Idioma",
+    lblStgDisplayTheme:                     "Tema",
+    btnStgDisplayThemeDark:                 "Escuro",
+    btnStgDisplayThemeLight:                "Claro",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "Sequencie e renumerar arquivos de vídeo via arrastar e soltar.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "Sequencie e renumerar arquivos de vídeo via arrastar e soltar.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Capítulo",
@@ -530,19 +535,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "Compactar slots ao soltar",
     tipHdrCompactAll:                       "Compactar espaços de slot em todos os capítulos",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Definições",
-    tabDlgSettingsDisplay:                  "Visualização",
-    tabDlgSettingsAbout:                    "Sobre",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Definições",
+    tipStgBack:                             "Voltar",
+    tabStgDisplay:                          "Visualização",
+    tabStgAbout:                            "Sobre",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Idioma",
-    lblDlgSettingsDisplayTheme:             "Tema",
-    btnDlgSettingsDisplayThemeDark:         "Escuro",
-    btnDlgSettingsDisplayThemeLight:        "Claro",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Idioma",
+    lblStgDisplayTheme:                     "Tema",
+    btnStgDisplayThemeDark:                 "Escuro",
+    btnStgDisplayThemeLight:                "Claro",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "Sequencie e renumerar ficheiros de vídeo através de arrastar e soltar.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "Sequencie e renumerar ficheiros de vídeo através de arrastar e soltar.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Capítulo",
@@ -628,19 +634,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "Comprimi slot al rilascio",
     tipHdrCompactAll:                       "Comprimi spazi slot in tutti i capitoli",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Impostazioni",
-    tabDlgSettingsDisplay:                  "Schermo",
-    tabDlgSettingsAbout:                    "Informazioni",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Impostazioni",
+    tipStgBack:                             "Indietro",
+    tabStgDisplay:                          "Schermo",
+    tabStgAbout:                            "Informazioni",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Lingua",
-    lblDlgSettingsDisplayTheme:             "Tema",
-    btnDlgSettingsDisplayThemeDark:         "Scuro",
-    btnDlgSettingsDisplayThemeLight:        "Chiaro",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Lingua",
+    lblStgDisplayTheme:                     "Tema",
+    btnStgDisplayThemeDark:                 "Scuro",
+    btnStgDisplayThemeLight:                "Chiaro",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "Sequenzia e rinumera i file di riprese video tramite trascinamento.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "Sequenzia e rinumera i file di riprese video tramite trascinamento.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Capitolo",
@@ -726,19 +733,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "Sleuven compact maken bij neerzetten",
     tipHdrCompactAll:                       "Sleufgaten in alle hoofdstukken compact maken",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Instellingen",
-    tabDlgSettingsDisplay:                  "Weergave",
-    tabDlgSettingsAbout:                    "Over",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Instellingen",
+    tipStgBack:                             "Terug",
+    tabStgDisplay:                          "Weergave",
+    tabStgAbout:                            "Over",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Taal",
-    lblDlgSettingsDisplayTheme:             "Thema",
-    btnDlgSettingsDisplayThemeDark:         "Donker",
-    btnDlgSettingsDisplayThemeLight:        "Licht",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Taal",
+    lblStgDisplayTheme:                     "Thema",
+    btnStgDisplayThemeDark:                 "Donker",
+    btnStgDisplayThemeLight:                "Licht",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "Video-opnamebestanden sequencen en hernummeren via slepen en neerzetten.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "Video-opnamebestanden sequencen en hernummeren via slepen en neerzetten.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Hoofdstuk",
@@ -824,19 +832,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "Сжимать слоты при перетаскивании",
     tipHdrCompactAll:                       "Сжать промежутки между слотами во всех главах",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Настройки",
-    tabDlgSettingsDisplay:                  "Отображение",
-    tabDlgSettingsAbout:                    "О программе",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Настройки",
+    tipStgBack:                             "Назад",
+    tabStgDisplay:                          "Отображение",
+    tabStgAbout:                            "О программе",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Язык",
-    lblDlgSettingsDisplayTheme:             "Тема",
-    btnDlgSettingsDisplayThemeDark:         "Тёмный",
-    btnDlgSettingsDisplayThemeLight:        "Светлый",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Язык",
+    lblStgDisplayTheme:                     "Тема",
+    btnStgDisplayThemeDark:                 "Тёмный",
+    btnStgDisplayThemeLight:                "Светлый",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "Упорядочивайте и перенумеровывайте файлы видеозаписей перетаскиванием.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "Упорядочивайте и перенумеровывайте файлы видеозаписей перетаскиванием.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Глава",
@@ -922,19 +931,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "Стискати слоти при перетягуванні",
     tipHdrCompactAll:                       "Стиснути проміжки між слотами в усіх розділах",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Налаштування",
-    tabDlgSettingsDisplay:                  "Відображення",
-    tabDlgSettingsAbout:                    "Про програму",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Налаштування",
+    tipStgBack:                             "Назад",
+    tabStgDisplay:                          "Відображення",
+    tabStgAbout:                            "Про програму",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Мова",
-    lblDlgSettingsDisplayTheme:             "Тема",
-    btnDlgSettingsDisplayThemeDark:         "Темний",
-    btnDlgSettingsDisplayThemeLight:        "Світлий",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Мова",
+    lblStgDisplayTheme:                     "Тема",
+    btnStgDisplayThemeDark:                 "Темний",
+    btnStgDisplayThemeLight:                "Світлий",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "Упорядковуйте та перенумеровуйте файли відеозаписів перетягуванням.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "Упорядковуйте та перенумеровуйте файли відеозаписів перетягуванням.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Розділ",
@@ -1020,19 +1030,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "Kompaktuj sloty po upuszczeniu",
     tipHdrCompactAll:                       "Kompaktuj odstępy między slotami we wszystkich rozdziałach",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Ustawienia",
-    tabDlgSettingsDisplay:                  "Wyświetlanie",
-    tabDlgSettingsAbout:                    "O programie",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Ustawienia",
+    tipStgBack:                             "Wstecz",
+    tabStgDisplay:                          "Wyświetlanie",
+    tabStgAbout:                            "O programie",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Język",
-    lblDlgSettingsDisplayTheme:             "Motyw",
-    btnDlgSettingsDisplayThemeDark:         "Ciemny",
-    btnDlgSettingsDisplayThemeLight:        "Jasny",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Język",
+    lblStgDisplayTheme:                     "Motyw",
+    btnStgDisplayThemeDark:                 "Ciemny",
+    btnStgDisplayThemeLight:                "Jasny",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "Sekwencjonuj i zmieniaj numery plików ujęć wideo metodą „przeciągnij i upuść”.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "Sekwencjonuj i zmieniaj numery plików ujęć wideo metodą „przeciągnij i upuść”.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Rozdział",
@@ -1118,19 +1129,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "Compactează sloturile la plasare",
     tipHdrCompactAll:                       "Compactează spațiile dintre sloturi în toate capitolele",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Setări",
-    tabDlgSettingsDisplay:                  "Afișaj",
-    tabDlgSettingsAbout:                    "Despre",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Setări",
+    tipStgBack:                             "Înapoi",
+    tabStgDisplay:                          "Afișaj",
+    tabStgAbout:                            "Despre",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Limbă",
-    lblDlgSettingsDisplayTheme:             "Temă",
-    btnDlgSettingsDisplayThemeDark:         "Întunecat",
-    btnDlgSettingsDisplayThemeLight:        "Luminos",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Limbă",
+    lblStgDisplayTheme:                     "Temă",
+    btnStgDisplayThemeDark:                 "Întunecat",
+    btnStgDisplayThemeLight:                "Luminos",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "Secvențiați și renumerați fișierele video prin glisare și fixare.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "Secvențiați și renumerați fișierele video prin glisare și fixare.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Capitol",
@@ -1216,19 +1228,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "Kompakta platser vid släpp",
     tipHdrCompactAll:                       "Kompakta luckor mellan platser i alla kapitel",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Inställningar",
-    tabDlgSettingsDisplay:                  "Visning",
-    tabDlgSettingsAbout:                    "Om",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Inställningar",
+    tipStgBack:                             "Tillbaka",
+    tabStgDisplay:                          "Visning",
+    tabStgAbout:                            "Om",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Språk",
-    lblDlgSettingsDisplayTheme:             "Tema",
-    btnDlgSettingsDisplayThemeDark:         "Mörk",
-    btnDlgSettingsDisplayThemeLight:        "Ljus",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Språk",
+    lblStgDisplayTheme:                     "Tema",
+    btnStgDisplayThemeDark:                 "Mörk",
+    btnStgDisplayThemeLight:                "Ljus",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "Ordna och numrera om videoklippfiler via dra och släpp.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "Ordna och numrera om videoklippfiler via dra och släpp.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Kapitel",
@@ -1314,19 +1327,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "Komprimer spor ved slipp",
     tipHdrCompactAll:                       "Komprimer mellomrom mellom spor i alle kapitler",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Innstillinger",
-    tabDlgSettingsDisplay:                  "Skjerm",
-    tabDlgSettingsAbout:                    "Om",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Innstillinger",
+    tipStgBack:                             "Tilbake",
+    tabStgDisplay:                          "Skjerm",
+    tabStgAbout:                            "Om",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Språk",
-    lblDlgSettingsDisplayTheme:             "Tema",
-    btnDlgSettingsDisplayThemeDark:         "Mørk",
-    btnDlgSettingsDisplayThemeLight:        "Lys",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Språk",
+    lblStgDisplayTheme:                     "Tema",
+    btnStgDisplayThemeDark:                 "Mørk",
+    btnStgDisplayThemeLight:                "Lys",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "Sekvenser og omnummerer videofilfiler via dra-og-slipp.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "Sekvenser og omnummerer videofilfiler via dra-og-slipp.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Kapittel",
@@ -1412,19 +1426,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "Bırakıldığında yuvaları sıkıştır",
     tipHdrCompactAll:                       "Tüm bölümlerdeki yuva boşluklarını sıkıştır",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Ayarlar",
-    tabDlgSettingsDisplay:                  "Görüntü",
-    tabDlgSettingsAbout:                    "Hakkında",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Ayarlar",
+    tipStgBack:                             "Geri",
+    tabStgDisplay:                          "Görüntü",
+    tabStgAbout:                            "Hakkında",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Dil",
-    lblDlgSettingsDisplayTheme:             "Tema",
-    btnDlgSettingsDisplayThemeDark:         "Koyu",
-    btnDlgSettingsDisplayThemeLight:        "Açık",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Dil",
+    lblStgDisplayTheme:                     "Tema",
+    btnStgDisplayThemeDark:                 "Koyu",
+    btnStgDisplayThemeLight:                "Açık",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "Video çekim dosyalarını sürükle ve bırak ile sıralayın ve yeniden numaralandırın.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "Video çekim dosyalarını sürükle ve bırak ile sıralayın ve yeniden numaralandırın.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Bölüm",
@@ -1510,19 +1525,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "Sažmi utore pri ispuštanju",
     tipHdrCompactAll:                       "Sažmi razmake utora u svim poglavljima",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Postavke",
-    tabDlgSettingsDisplay:                  "Prikaz",
-    tabDlgSettingsAbout:                    "O programu",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Postavke",
+    tipStgBack:                             "Natrag",
+    tabStgDisplay:                          "Prikaz",
+    tabStgAbout:                            "O programu",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Jezik",
-    lblDlgSettingsDisplayTheme:             "Tema",
-    btnDlgSettingsDisplayThemeDark:         "Tamno",
-    btnDlgSettingsDisplayThemeLight:        "Svijetlo",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Jezik",
+    lblStgDisplayTheme:                     "Tema",
+    btnStgDisplayThemeDark:                 "Tamno",
+    btnStgDisplayThemeLight:                "Svijetlo",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "Sekvencirajte i prenumerirajte datoteke video snimaka povlačenjem i ispuštanjem.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "Sekvencirajte i prenumerirajte datoteke video snimaka povlačenjem i ispuštanjem.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Poglavlje",
@@ -1608,19 +1624,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "Συμπύκνωση θέσεων κατά την απόθεση",
     tipHdrCompactAll:                       "Συμπύκνωση κενών θέσεων σε όλα τα κεφάλαια",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Ρυθμίσεις",
-    tabDlgSettingsDisplay:                  "Οθόνη",
-    tabDlgSettingsAbout:                    "Σχετικά",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Ρυθμίσεις",
+    tipStgBack:                             "Πίσω",
+    tabStgDisplay:                          "Οθόνη",
+    tabStgAbout:                            "Σχετικά",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Γλώσσα",
-    lblDlgSettingsDisplayTheme:             "Θέμα",
-    btnDlgSettingsDisplayThemeDark:         "Σκοτεινό",
-    btnDlgSettingsDisplayThemeLight:        "Φωτεινό",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Γλώσσα",
+    lblStgDisplayTheme:                     "Θέμα",
+    btnStgDisplayThemeDark:                 "Σκοτεινό",
+    btnStgDisplayThemeLight:                "Φωτεινό",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "Ακολουθήστε και αναριθμήστε αρχεία βίντεο μέσω μεταφοράς και απόθεσης.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "Ακολουθήστε και αναριθμήστε αρχεία βίντεο μέσω μεταφοράς και απόθεσης.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Κεφάλαιο",
@@ -1706,19 +1723,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "כווץ חריצים בעת שחרור",
     tipHdrCompactAll:                       "כווץ רווחי חריצים בכל הפרקים",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "הגדרות",
-    tabDlgSettingsDisplay:                  "תצוגה",
-    tabDlgSettingsAbout:                    "אודות",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "הגדרות",
+    tipStgBack:                             "חזור",
+    tabStgDisplay:                          "תצוגה",
+    tabStgAbout:                            "אודות",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "שפה",
-    lblDlgSettingsDisplayTheme:             "ערכת נושא",
-    btnDlgSettingsDisplayThemeDark:         "כהה",
-    btnDlgSettingsDisplayThemeLight:        "בהיר",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "שפה",
+    lblStgDisplayTheme:                     "ערכת נושא",
+    btnStgDisplayThemeDark:                 "כהה",
+    btnStgDisplayThemeLight:                "בהיר",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "סדר מחדש ומספר מחדש קבצי צילום וידאו באמצעות גרירה ושחרור.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "סדר מחדש ומספר מחדש קבצי צילום וידאו באמצעות גרירה ושחרור.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "פרק",
@@ -1804,19 +1822,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "ضغط الفتحات عند الإفلات",
     tipHdrCompactAll:                       "ضغط فجوات الفتحات في جميع الفصول",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "الإعدادات",
-    tabDlgSettingsDisplay:                  "عرض",
-    tabDlgSettingsAbout:                    "حول",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "الإعدادات",
+    tipStgBack:                             "رجوع",
+    tabStgDisplay:                          "عرض",
+    tabStgAbout:                            "حول",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "اللغة",
-    lblDlgSettingsDisplayTheme:             "المظهر",
-    btnDlgSettingsDisplayThemeDark:         "داكن",
-    btnDlgSettingsDisplayThemeLight:        "فاتح",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "اللغة",
+    lblStgDisplayTheme:                     "المظهر",
+    btnStgDisplayThemeDark:                 "داكن",
+    btnStgDisplayThemeLight:                "فاتح",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "ترتيب وإعادة ترقيم ملفات لقطات الفيديو بالسحب والإفلات.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "ترتيب وإعادة ترقيم ملفات لقطات الفيديو بالسحب والإفلات.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "فصل",
@@ -1902,19 +1921,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "فشرده‌سازی اسلات‌ها هنگام رها کردن",
     tipHdrCompactAll:                       "فشرده‌سازی شکاف‌های اسلات در تمام فصل‌ها",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "تنظیمات",
-    tabDlgSettingsDisplay:                  "نمایش",
-    tabDlgSettingsAbout:                    "درباره",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "تنظیمات",
+    tipStgBack:                             "بازگشت",
+    tabStgDisplay:                          "نمایش",
+    tabStgAbout:                            "درباره",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "زبان",
-    lblDlgSettingsDisplayTheme:             "پوسته",
-    btnDlgSettingsDisplayThemeDark:         "تیره",
-    btnDlgSettingsDisplayThemeLight:        "روشن",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "زبان",
+    lblStgDisplayTheme:                     "پوسته",
+    btnStgDisplayThemeDark:                 "تیره",
+    btnStgDisplayThemeLight:                "روشن",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "ترتیب و شماره‌گذاری مجدد فایل‌های ویدیویی با کشیدن و رها کردن.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "ترتیب و شماره‌گذاری مجدد فایل‌های ویدیویی با کشیدن و رها کردن.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "فصل",
@@ -2000,19 +2020,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "拖放时紧凑插槽",
     tipHdrCompactAll:                       "紧凑所有章节的插槽间隙",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "设置",
-    tabDlgSettingsDisplay:                  "显示",
-    tabDlgSettingsAbout:                    "关于",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "设置",
+    tipStgBack:                             "返回",
+    tabStgDisplay:                          "显示",
+    tabStgAbout:                            "关于",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "语言",
-    lblDlgSettingsDisplayTheme:             "主题",
-    btnDlgSettingsDisplayThemeDark:         "深色",
-    btnDlgSettingsDisplayThemeLight:        "浅色",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "语言",
+    lblStgDisplayTheme:                     "主题",
+    btnStgDisplayThemeDark:                 "深色",
+    btnStgDisplayThemeLight:                "浅色",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "通过拖放对视频拍摄文件进行排序和重新编号。",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "通过拖放对视频拍摄文件进行排序和重新编号。",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "章节",
@@ -2098,19 +2119,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "拖放時緊湊插槽",
     tipHdrCompactAll:                       "緊湊所有章節的插槽間隙",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "設定",
-    tabDlgSettingsDisplay:                  "顯示",
-    tabDlgSettingsAbout:                    "關於",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "設定",
+    tipStgBack:                             "返回",
+    tabStgDisplay:                          "顯示",
+    tabStgAbout:                            "關於",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "語言",
-    lblDlgSettingsDisplayTheme:             "主題",
-    btnDlgSettingsDisplayThemeDark:         "深色",
-    btnDlgSettingsDisplayThemeLight:        "淺色",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "語言",
+    lblStgDisplayTheme:                     "主題",
+    btnStgDisplayThemeDark:                 "深色",
+    btnStgDisplayThemeLight:                "淺色",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "透過拖放對影片拍攝檔案進行排序和重新編號。",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "透過拖放對影片拍攝檔案進行排序和重新編號。",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "章節",
@@ -2196,19 +2218,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "ドロップ時にスロットを圧縮",
     tipHdrCompactAll:                       "すべてのチャプターのスロットの隙間を圧縮",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "設定",
-    tabDlgSettingsDisplay:                  "表示",
-    tabDlgSettingsAbout:                    "バージョン情報",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "設定",
+    tipStgBack:                             "戻る",
+    tabStgDisplay:                          "表示",
+    tabStgAbout:                            "バージョン情報",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "言語",
-    lblDlgSettingsDisplayTheme:             "テーマ",
-    btnDlgSettingsDisplayThemeDark:         "ダーク",
-    btnDlgSettingsDisplayThemeLight:        "ライト",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "言語",
+    lblStgDisplayTheme:                     "テーマ",
+    btnStgDisplayThemeDark:                 "ダーク",
+    btnStgDisplayThemeLight:                "ライト",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "ドラッグ＆ドロップでビデオショットファイルをシーケンス化し、番号を振り直します。",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "ドラッグ＆ドロップでビデオショットファイルをシーケンス化し、番号を振り直します。",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "チャプター",
@@ -2294,19 +2317,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "드롭 시 슬롯 압축",
     tipHdrCompactAll:                       "모든 챕터의 슬롯 간격 압축",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "설정",
-    tabDlgSettingsDisplay:                  "디스플레이",
-    tabDlgSettingsAbout:                    "정보",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "설정",
+    tipStgBack:                             "뒤로",
+    tabStgDisplay:                          "디스플레이",
+    tabStgAbout:                            "정보",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "언어",
-    lblDlgSettingsDisplayTheme:             "테마",
-    btnDlgSettingsDisplayThemeDark:         "어둡게",
-    btnDlgSettingsDisplayThemeLight:        "밝게",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "언어",
+    lblStgDisplayTheme:                     "테마",
+    btnStgDisplayThemeDark:                 "어둡게",
+    btnStgDisplayThemeLight:                "밝게",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "드래그 앤 드롭으로 비디오 촬영 파일의 순서를 지정하고 번호를 다시 매깁니다.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "드래그 앤 드롭으로 비디오 촬영 파일의 순서를 지정하고 번호를 다시 매깁니다.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "챕터",
@@ -2392,19 +2416,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "Thu gọn khe khi thả",
     tipHdrCompactAll:                       "Thu gọn khoảng trống khe trong tất cả các chương",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Cài đặt",
-    tabDlgSettingsDisplay:                  "Hiển thị",
-    tabDlgSettingsAbout:                    "Giới thiệu",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Cài đặt",
+    tipStgBack:                             "Quay lại",
+    tabStgDisplay:                          "Hiển thị",
+    tabStgAbout:                            "Giới thiệu",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Ngôn ngữ",
-    lblDlgSettingsDisplayTheme:             "Chủ đề",
-    btnDlgSettingsDisplayThemeDark:         "Tối",
-    btnDlgSettingsDisplayThemeLight:        "Sáng",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Ngôn ngữ",
+    lblStgDisplayTheme:                     "Chủ đề",
+    btnStgDisplayThemeDark:                 "Tối",
+    btnStgDisplayThemeLight:                "Sáng",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "Sắp xếp và đánh số lại các tệp quay video bằng cách kéo và thả.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "Sắp xếp và đánh số lại các tệp quay video bằng cách kéo và thả.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Chương",
@@ -2490,19 +2515,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "จัดช่องให้กระชับเมื่อวาง",
     tipHdrCompactAll:                       "จัดช่องว่างในทุกบทให้กระชับ",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "การตั้งค่า",
-    tabDlgSettingsDisplay:                  "การแสดงผล",
-    tabDlgSettingsAbout:                    "เกี่ยวกับ",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "การตั้งค่า",
+    tipStgBack:                             "ย้อนกลับ",
+    tabStgDisplay:                          "การแสดงผล",
+    tabStgAbout:                            "เกี่ยวกับ",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "ภาษา",
-    lblDlgSettingsDisplayTheme:             "ธีม",
-    btnDlgSettingsDisplayThemeDark:         "มืด",
-    btnDlgSettingsDisplayThemeLight:        "สว่าง",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "ภาษา",
+    lblStgDisplayTheme:                     "ธีม",
+    btnStgDisplayThemeDark:                 "มืด",
+    btnStgDisplayThemeLight:                "สว่าง",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "จัดลำดับและเปลี่ยนหมายเลขไฟล์วิดีโอด้วยการลากและวาง",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "จัดลำดับและเปลี่ยนหมายเลขไฟล์วิดีโอด้วยการลากและวาง",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "บท",
@@ -2588,19 +2614,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "Padatkan slot saat dijatuhkan",
     tipHdrCompactAll:                       "Padatkan celah slot di semua bab",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Pengaturan",
-    tabDlgSettingsDisplay:                  "Tampilan",
-    tabDlgSettingsAbout:                    "Tentang",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Pengaturan",
+    tipStgBack:                             "Kembali",
+    tabStgDisplay:                          "Tampilan",
+    tabStgAbout:                            "Tentang",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Bahasa",
-    lblDlgSettingsDisplayTheme:             "Tema",
-    btnDlgSettingsDisplayThemeDark:         "Gelap",
-    btnDlgSettingsDisplayThemeLight:        "Terang",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Bahasa",
+    lblStgDisplayTheme:                     "Tema",
+    btnStgDisplayThemeDark:                 "Gelap",
+    btnStgDisplayThemeLight:                "Terang",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "Urutkan dan beri nomor ulang file rekaman video melalui seret dan lepas.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "Urutkan dan beri nomor ulang file rekaman video melalui seret dan lepas.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Bab",
@@ -2686,19 +2713,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "Compactar espais en deixar anar",
     tipHdrCompactAll:                       "Compactar buits d'espais en tots els capítols",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Configuració",
-    tabDlgSettingsDisplay:                  "Visualització",
-    tabDlgSettingsAbout:                    "Quant a",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Configuració",
+    tipStgBack:                             "Enrere",
+    tabStgDisplay:                          "Visualització",
+    tabStgAbout:                            "Quant a",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Idioma",
-    lblDlgSettingsDisplayTheme:             "Tema",
-    btnDlgSettingsDisplayThemeDark:         "Fosc",
-    btnDlgSettingsDisplayThemeLight:        "Clar",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Idioma",
+    lblStgDisplayTheme:                     "Tema",
+    btnStgDisplayThemeDark:                 "Fosc",
+    btnStgDisplayThemeLight:                "Clar",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "Ordeneu i renumereu els fitxers de vídeo mitjançant arrossegar i deixar anar.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "Ordeneu i renumereu els fitxers de vídeo mitjançant arrossegar i deixar anar.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Capítol",
@@ -2784,19 +2812,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "Komprimovat sloty při přetažení",
     tipHdrCompactAll:                       "Komprimovat mezery slotů ve všech kapitolách",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Nastavení",
-    tabDlgSettingsDisplay:                  "Zobrazení",
-    tabDlgSettingsAbout:                    "O programu",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Nastavení",
+    tipStgBack:                             "Zpět",
+    tabStgDisplay:                          "Zobrazení",
+    tabStgAbout:                            "O programu",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Jazyk",
-    lblDlgSettingsDisplayTheme:             "Motiv",
-    btnDlgSettingsDisplayThemeDark:         "Tmavý",
-    btnDlgSettingsDisplayThemeLight:        "Světlý",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Jazyk",
+    lblStgDisplayTheme:                     "Motiv",
+    btnStgDisplayThemeDark:                 "Tmavý",
+    btnStgDisplayThemeLight:                "Světlý",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "Sekvenujte a přečíslujte soubory videozáznamů přetažením.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "Sekvenujte a přečíslujte soubory videozáznamů přetažením.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Kapitola",
@@ -2882,19 +2911,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "Kompaktér pladser ved slip",
     tipHdrCompactAll:                       "Kompaktér mellemrum mellem pladser i alle kapitler",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Indstillinger",
-    tabDlgSettingsDisplay:                  "Skærm",
-    tabDlgSettingsAbout:                    "Om",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Indstillinger",
+    tipStgBack:                             "Tilbage",
+    tabStgDisplay:                          "Skærm",
+    tabStgAbout:                            "Om",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Sprog",
-    lblDlgSettingsDisplayTheme:             "Tema",
-    btnDlgSettingsDisplayThemeDark:         "Mørk",
-    btnDlgSettingsDisplayThemeLight:        "Lys",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Sprog",
+    lblStgDisplayTheme:                     "Tema",
+    btnStgDisplayThemeDark:                 "Mørk",
+    btnStgDisplayThemeLight:                "Lys",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "Sekvenser og omnummerer videoklipfiler via træk og slip.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "Sekvenser og omnummerer videoklipfiler via træk og slip.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Kapitel",
@@ -2980,19 +3010,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "Tiivistä paikat pudotettaessa",
     tipHdrCompactAll:                       "Tiivistä paikkojen välit kaikissa luvuissa",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Asetukset",
-    tabDlgSettingsDisplay:                  "Näyttö",
-    tabDlgSettingsAbout:                    "Tietoja",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Asetukset",
+    tipStgBack:                             "Takaisin",
+    tabStgDisplay:                          "Näyttö",
+    tabStgAbout:                            "Tietoja",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Kieli",
-    lblDlgSettingsDisplayTheme:             "Teema",
-    btnDlgSettingsDisplayThemeDark:         "Tumma",
-    btnDlgSettingsDisplayThemeLight:        "Vaalea",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Kieli",
+    lblStgDisplayTheme:                     "Teema",
+    btnStgDisplayThemeDark:                 "Tumma",
+    btnStgDisplayThemeLight:                "Vaalea",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "Järjestä ja numeroi videokuvatiedostot uudelleen vetämällä ja pudottamalla.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "Järjestä ja numeroi videokuvatiedostot uudelleen vetämällä ja pudottamalla.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Luku",
@@ -3078,19 +3109,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "Padatkan slot semasa lepas",
     tipHdrCompactAll:                       "Padatkan jurang slot dalam semua bab",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Tetapan",
-    tabDlgSettingsDisplay:                  "Paparan",
-    tabDlgSettingsAbout:                    "Mengenai",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Tetapan",
+    tipStgBack:                             "Kembali",
+    tabStgDisplay:                          "Paparan",
+    tabStgAbout:                            "Mengenai",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Bahasa",
-    lblDlgSettingsDisplayTheme:             "Tema",
-    btnDlgSettingsDisplayThemeDark:         "Gelap",
-    btnDlgSettingsDisplayThemeLight:        "Cerah",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Bahasa",
+    lblStgDisplayTheme:                     "Tema",
+    btnStgDisplayThemeDark:                 "Gelap",
+    btnStgDisplayThemeLight:                "Cerah",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "Susun dan nombor semula fail rakaman video melalui seret dan lepas.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "Susun dan nombor semula fail rakaman video melalui seret dan lepas.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Bab",
@@ -3176,19 +3208,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "Խտացնել բնիկները գցելիս",
     tipHdrCompactAll:                       "Խտացնել բնիկների բացերը բոլոր գլուխներում",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Կարգավորումներ",
-    tabDlgSettingsDisplay:                  "Ցուցադրում",
-    tabDlgSettingsAbout:                    "Ծրագրի մասին",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Կարգավորումներ",
+    tipStgBack:                             "Հետ",
+    tabStgDisplay:                          "Ցուցադրում",
+    tabStgAbout:                            "Ծրագրի մասին",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Լեզու",
-    lblDlgSettingsDisplayTheme:             "Թեմա",
-    btnDlgSettingsDisplayThemeDark:         "Մուգ",
-    btnDlgSettingsDisplayThemeLight:        "Բաց",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Լեզու",
+    lblStgDisplayTheme:                     "Թեմա",
+    btnStgDisplayThemeDark:                 "Մուգ",
+    btnStgDisplayThemeLight:                "Բաց",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "Տեսանյութերի ֆայլերը հաջորդականացնել և վերահամարակալել քաշել-թողնել մեթոդով։",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "Տեսանյութերի ֆայլերը հաջորդականացնել և վերահամարակալել քաշել-թողնել մեթոդով։",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Գլուխ",
@@ -3274,19 +3307,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "Компресиране на слотовете при пускане",
     tipHdrCompactAll:                       "Компресиране на празнините в слотовете във всички глави",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Настройки",
-    tabDlgSettingsDisplay:                  "Показване",
-    tabDlgSettingsAbout:                    "Относно",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Настройки",
+    tipStgBack:                             "Назад",
+    tabStgDisplay:                          "Показване",
+    tabStgAbout:                            "Относно",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Език",
-    lblDlgSettingsDisplayTheme:             "Тема",
-    btnDlgSettingsDisplayThemeDark:         "Тъмен",
-    btnDlgSettingsDisplayThemeLight:        "Светъл",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Език",
+    lblStgDisplayTheme:                     "Тема",
+    btnStgDisplayThemeDark:                 "Тъмен",
+    btnStgDisplayThemeLight:                "Светъл",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "Подреждайте и преномерирайте видео файлове чрез влачене и пускане.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "Подреждайте и преномерирайте видео файлове чрез влачене и пускане.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Глава",
@@ -3372,19 +3406,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "Compactar espazos ao soltar",
     tipHdrCompactAll:                       "Compactar ocos de espazos en todos os capítulos",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Configuración",
-    tabDlgSettingsDisplay:                  "Visualización",
-    tabDlgSettingsAbout:                    "Acerca de",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Configuración",
+    tipStgBack:                             "Atrás",
+    tabStgDisplay:                          "Visualización",
+    tabStgAbout:                            "Acerca de",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Idioma",
-    lblDlgSettingsDisplayTheme:             "Tema",
-    btnDlgSettingsDisplayThemeDark:         "Escuro",
-    btnDlgSettingsDisplayThemeLight:        "Claro",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Idioma",
+    lblStgDisplayTheme:                     "Tema",
+    btnStgDisplayThemeDark:                 "Escuro",
+    btnStgDisplayThemeLight:                "Claro",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "Secuencia e renumeración de ficheiros de tomas de vídeo mediante arrastrar e soltar.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "Secuencia e renumeración de ficheiros de tomas de vídeo mediante arrastrar e soltar.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Capítulo",
@@ -3470,19 +3505,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "Slotok tömörítése eldobáskor",
     tipHdrCompactAll:                       "Slot-rések tömörítése az összes fejezetben",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Beállítások",
-    tabDlgSettingsDisplay:                  "Megjelenítés",
-    tabDlgSettingsAbout:                    "Névjegy",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Beállítások",
+    tipStgBack:                             "Vissza",
+    tabStgDisplay:                          "Megjelenítés",
+    tabStgAbout:                            "Névjegy",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Nyelv",
-    lblDlgSettingsDisplayTheme:             "Téma",
-    btnDlgSettingsDisplayThemeDark:         "Sötét",
-    btnDlgSettingsDisplayThemeLight:        "Világos",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Nyelv",
+    lblStgDisplayTheme:                     "Téma",
+    btnStgDisplayThemeDark:                 "Sötét",
+    btnStgDisplayThemeLight:                "Világos",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "Videofájlok sorrendjének és számozásának módosítása húzással.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "Videofájlok sorrendjének és számozásának módosítása húzással.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Fejezet",
@@ -3568,19 +3604,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "Sutraukti lizdus numetus",
     tipHdrCompactAll:                       "Sutraukti lizdų tarpus visuose skyriuose",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Nustatymai",
-    tabDlgSettingsDisplay:                  "Rodymas",
-    tabDlgSettingsAbout:                    "Apie",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Nustatymai",
+    tipStgBack:                             "Atgal",
+    tabStgDisplay:                          "Rodymas",
+    tabStgAbout:                            "Apie",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Kalba",
-    lblDlgSettingsDisplayTheme:             "Tema",
-    btnDlgSettingsDisplayThemeDark:         "Tamsus",
-    btnDlgSettingsDisplayThemeLight:        "Šviesus",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Kalba",
+    lblStgDisplayTheme:                     "Tema",
+    btnStgDisplayThemeDark:                 "Tamsus",
+    btnStgDisplayThemeLight:                "Šviesus",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "Išdėstykite ir pernumeruokite vaizdo įrašų failus vilkdami ir numesdami.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "Išdėstykite ir pernumeruokite vaizdo įrašų failus vilkdami ir numesdami.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Skyrius",
@@ -3666,19 +3703,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "Компактирај ги слотовите при пуштање",
     tipHdrCompactAll:                       "Компактирај ги празнините на слотовите во сите поглавја",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Поставки",
-    tabDlgSettingsDisplay:                  "Приказ",
-    tabDlgSettingsAbout:                    "За програмата",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Поставки",
+    tipStgBack:                             "Назад",
+    tabStgDisplay:                          "Приказ",
+    tabStgAbout:                            "За програмата",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Јазик",
-    lblDlgSettingsDisplayTheme:             "Тема",
-    btnDlgSettingsDisplayThemeDark:         "Темно",
-    btnDlgSettingsDisplayThemeLight:        "Светло",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Јазик",
+    lblStgDisplayTheme:                     "Тема",
+    btnStgDisplayThemeDark:                 "Темно",
+    btnStgDisplayThemeLight:                "Светло",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "Подредувајте и пренумерирајте видео датотеки со влечење и пуштање.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "Подредувајте и пренумерирајте видео датотеки со влечење и пуштање.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Поглавје",
@@ -3764,19 +3802,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "Компресуј слотове при испуштању",
     tipHdrCompactAll:                       "Компресуј размаке слотова у свим поглављима",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Подешавања",
-    tabDlgSettingsDisplay:                  "Приказ",
-    tabDlgSettingsAbout:                    "О програму",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Подешавања",
+    tipStgBack:                             "Назад",
+    tabStgDisplay:                          "Приказ",
+    tabStgAbout:                            "О програму",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Језик",
-    lblDlgSettingsDisplayTheme:             "Тема",
-    btnDlgSettingsDisplayThemeDark:         "Тамно",
-    btnDlgSettingsDisplayThemeLight:        "Светло",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Језик",
+    lblStgDisplayTheme:                     "Тема",
+    btnStgDisplayThemeDark:                 "Тамно",
+    btnStgDisplayThemeLight:                "Светло",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "Редослед и пренумерација видео фајлова превлачењем и отпуштањем.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "Редослед и пренумерација видео фајлова превлачењем и отпуштањем.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Поглавље",
@@ -3862,19 +3901,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "Komprimovať sloty pri pustení",
     tipHdrCompactAll:                       "Komprimovať medzery slotov vo všetkých kapitolách",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Nastavenia",
-    tabDlgSettingsDisplay:                  "Zobrazenie",
-    tabDlgSettingsAbout:                    "O programe",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Nastavenia",
+    tipStgBack:                             "Späť",
+    tabStgDisplay:                          "Zobrazenie",
+    tabStgAbout:                            "O programe",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Jazyk",
-    lblDlgSettingsDisplayTheme:             "Téma",
-    btnDlgSettingsDisplayThemeDark:         "Tmavý",
-    btnDlgSettingsDisplayThemeLight:        "Svetlý",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Jazyk",
+    lblStgDisplayTheme:                     "Téma",
+    btnStgDisplayThemeDark:                 "Tmavý",
+    btnStgDisplayThemeLight:                "Svetlý",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "Sekvenujte a prečíslujte súbory videozáznamov potiahnutím a pustením.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "Sekvenujte a prečíslujte súbory videozáznamov potiahnutím a pustením.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Kapitola",
@@ -3960,19 +4000,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "Strni reže ob spustu",
     tipHdrCompactAll:                       "Strni vrzeli med režami v vseh poglavjih",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Nastavitve",
-    tabDlgSettingsDisplay:                  "Prikaz",
-    tabDlgSettingsAbout:                    "O programu",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Nastavitve",
+    tipStgBack:                             "Nazaj",
+    tabStgDisplay:                          "Prikaz",
+    tabStgAbout:                            "O programu",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Jezik",
-    lblDlgSettingsDisplayTheme:             "Tema",
-    btnDlgSettingsDisplayThemeDark:         "Temno",
-    btnDlgSettingsDisplayThemeLight:        "Svetlo",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Jezik",
+    lblStgDisplayTheme:                     "Tema",
+    btnStgDisplayThemeDark:                 "Temno",
+    btnStgDisplayThemeLight:                "Svetlo",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "Zaporedno uredite in preštevilčite datoteke video posnetkov z vlečenjem in spuščanjem.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "Zaporedno uredite in preštevilčite datoteke video posnetkov z vlečenjem in spuščanjem.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Poglavje",
@@ -4058,19 +4099,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "கைவிடும்போது ஸ்லாட்டுகளைச் சுருக்கவும்",
     tipHdrCompactAll:                       "அனைத்து அத்தியாயங்களிலும் ஸ்லாட் இடைவெளிகளைச் சுருக்கவும்",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "அமைப்புகள்",
-    tabDlgSettingsDisplay:                  "காட்சி",
-    tabDlgSettingsAbout:                    "பற்றி",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "அமைப்புகள்",
+    tipStgBack:                             "பின்செல்",
+    tabStgDisplay:                          "காட்சி",
+    tabStgAbout:                            "பற்றி",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "மொழி",
-    lblDlgSettingsDisplayTheme:             "தீம்",
-    btnDlgSettingsDisplayThemeDark:         "இருண்ட",
-    btnDlgSettingsDisplayThemeLight:        "வெளிச்சம்",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "மொழி",
+    lblStgDisplayTheme:                     "தீம்",
+    btnStgDisplayThemeDark:                 "இருண்ட",
+    btnStgDisplayThemeLight:                "வெளிச்சம்",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "இழுத்து விடுவதன் மூலம் வீடியோ ஷாட் கோப்புகளை வரிசைப்படுத்தி மறுபெயரிடவும்.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "இழுத்து விடுவதன் மூலம் வீடியோ ஷாட் கோப்புகளை வரிசைப்படுத்தி மறுபெயரிடவும்.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "அத்தியாயம்",
@@ -4156,19 +4198,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "ड्रॉप करने पर स्लॉट को सिकोड़ें",
     tipHdrCompactAll:                       "सभी अध्यायों में स्लॉट के अंतराल को सिकोड़ें",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "सेटिंग्स",
-    tabDlgSettingsDisplay:                  "प्रदर्शन",
-    tabDlgSettingsAbout:                    "के बारे में",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "सेटिंग्स",
+    tipStgBack:                             "वापस",
+    tabStgDisplay:                          "प्रदर्शन",
+    tabStgAbout:                            "के बारे में",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "भाषा",
-    lblDlgSettingsDisplayTheme:             "थीम",
-    btnDlgSettingsDisplayThemeDark:         "गहरा",
-    btnDlgSettingsDisplayThemeLight:        "हल्का",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "भाषा",
+    lblStgDisplayTheme:                     "थीम",
+    btnStgDisplayThemeDark:                 "गहरा",
+    btnStgDisplayThemeLight:                "हल्का",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "ड्रैग-एंड-ड्रॉप के माध्यम से वीडियो शॉट फ़ाइलों को अनुक्रमित और पुन: क्रमांकित करें।",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "ड्रैग-एंड-ड्रॉप के माध्यम से वीडियो शॉट फ़ाइलों को अनुक्रमित और पुन: क्रमांकित करें।",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "अध्याय",
@@ -4254,19 +4297,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "ড্রপ করার সময় স্লট কম্প্যাক্ট করুন",
     tipHdrCompactAll:                       "সমস্ত অধ্যায়ে স্লট ফাঁক কম্প্যাক্ট করুন",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "সেটিংস",
-    tabDlgSettingsDisplay:                  "প্রদর্শন",
-    tabDlgSettingsAbout:                    "সম্পর্কে",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "সেটিংস",
+    tipStgBack:                             "পিছনে",
+    tabStgDisplay:                          "প্রদর্শন",
+    tabStgAbout:                            "সম্পর্কে",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "ভাষা",
-    lblDlgSettingsDisplayTheme:             "থিম",
-    btnDlgSettingsDisplayThemeDark:         "গাঢ়",
-    btnDlgSettingsDisplayThemeLight:        "হালকা",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "ভাষা",
+    lblStgDisplayTheme:                     "থিম",
+    btnStgDisplayThemeDark:                 "গাঢ়",
+    btnStgDisplayThemeLight:                "হালকা",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "ড্র্যাগ-এন্ড-ড্রপ ব্যবহার করে ভিডিও শট ফাইলগুলির ক্রম এবং পুনরায় নম্বর দিন।",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "ড্র্যাগ-এন্ড-ড্রপ ব্যবহার করে ভিডিও শট ফাইলগুলির ক্রম এবং পুনরায় নম্বর দিন।",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "অধ্যায়",
@@ -4352,19 +4396,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "گرانے پر سلاٹس کو کمپیکٹ کریں",
     tipHdrCompactAll:                       "تمام ابواب میں سلاٹ کے خالی مقامات کو کمپیکٹ کریں",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "ترتیبات",
-    tabDlgSettingsDisplay:                  "ڈسپلے",
-    tabDlgSettingsAbout:                    "کے بارے میں",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "ترتیبات",
+    tipStgBack:                             "واپس",
+    tabStgDisplay:                          "ڈسپلے",
+    tabStgAbout:                            "کے بارے میں",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "زبان",
-    lblDlgSettingsDisplayTheme:             "تھیم",
-    btnDlgSettingsDisplayThemeDark:         "گہرا",
-    btnDlgSettingsDisplayThemeLight:        "ہلکا",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "زبان",
+    lblStgDisplayTheme:                     "تھیم",
+    btnStgDisplayThemeDark:                 "گہرا",
+    btnStgDisplayThemeLight:                "ہلکا",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "ڈریگ اینڈ ڈراپ کے ذریعے ویڈیو شاٹ فائلوں کو ترتیب دیں اور دوبارہ نمبر دیں۔",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "ڈریگ اینڈ ڈراپ کے ذریعے ویڈیو شاٹ فائلوں کو ترتیب دیں اور دوبارہ نمبر دیں۔",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "باب",
@@ -4450,19 +4495,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "Punguza nafasi unapoangusha",
     tipHdrCompactAll:                       "Punguza mapengo ya nafasi katika sura zote",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Mipangilio",
-    tabDlgSettingsDisplay:                  "Onyesho",
-    tabDlgSettingsAbout:                    "Kuhusu",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Mipangilio",
+    tipStgBack:                             "Rudi",
+    tabStgDisplay:                          "Onyesho",
+    tabStgAbout:                            "Kuhusu",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Lugha",
-    lblDlgSettingsDisplayTheme:             "Mandhari",
-    btnDlgSettingsDisplayThemeDark:         "Giza",
-    btnDlgSettingsDisplayThemeLight:        "Nuru",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Lugha",
+    lblStgDisplayTheme:                     "Mandhari",
+    btnStgDisplayThemeDark:                 "Giza",
+    btnStgDisplayThemeLight:                "Nuru",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "Panga na ubadilishe nambari za faili za video kwa kuburuta na kuacha.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "Panga na ubadilishe nambari za faili za video kwa kuburuta na kuacha.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Sura",
@@ -4548,19 +4594,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "ਸੁੱਟਣ 'ਤੇ ਸਲਾਟਾਂ ਨੂੰ ਸੰਖੇਪ ਕਰੋ",
     tipHdrCompactAll:                       "ਸਾਰੇ ਅਧਿਆਵਾਂ ਵਿੱਚ ਸਲਾਟ ਦੇ ਖਾਲੀ ਥਾਂਵਾਂ ਨੂੰ ਸੰਖੇਪ ਕਰੋ",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "ਸੈਟਿੰਗਾਂ",
-    tabDlgSettingsDisplay:                  "ਪ੍ਰਦਰਸ਼ਨ",
-    tabDlgSettingsAbout:                    "ਬਾਰੇ",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "ਸੈਟਿੰਗਾਂ",
+    tipStgBack:                             "ਵਾਪਸ",
+    tabStgDisplay:                          "ਪ੍ਰਦਰਸ਼ਨ",
+    tabStgAbout:                            "ਬਾਰੇ",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "ਭਾਸ਼ਾ",
-    lblDlgSettingsDisplayTheme:             "ਥੀਮ",
-    btnDlgSettingsDisplayThemeDark:         "ਗੂੜ੍ਹਾ",
-    btnDlgSettingsDisplayThemeLight:        "ਹਲਕਾ",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "ਭਾਸ਼ਾ",
+    lblStgDisplayTheme:                     "ਥੀਮ",
+    btnStgDisplayThemeDark:                 "ਗੂੜ੍ਹਾ",
+    btnStgDisplayThemeLight:                "ਹਲਕਾ",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "ਡਰੈਗ-ਐਂਡ-ਡ੍ਰੌਪ ਰਾਹੀਂ ਵੀਡੀਓ ਸ਼ਾਟ ਫਾਈਲਾਂ ਨੂੰ ਕ੍ਰਮਬੱਧ ਅਤੇ ਮੁੜ-ਨੰਬਰ ਦਿਓ।",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "ਡਰੈਗ-ਐਂਡ-ਡ੍ਰੌਪ ਰਾਹੀਂ ਵੀਡੀਓ ਸ਼ਾਟ ਫਾਈਲਾਂ ਨੂੰ ਕ੍ਰਮਬੱਧ ਅਤੇ ਮੁੜ-ਨੰਬਰ ਦਿਓ।",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "ਅਧਿਆਇ",
@@ -4646,19 +4693,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "Haɗa ramuka yayin sauke",
     tipHdrCompactAll:                       "Haɗa gibin ramuka a dukkan surori",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Saituna",
-    tabDlgSettingsDisplay:                  "Nuni",
-    tabDlgSettingsAbout:                    "Game da",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Saituna",
+    tipStgBack:                             "Baya",
+    tabStgDisplay:                          "Nuni",
+    tabStgAbout:                            "Game da",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Harshe",
-    lblDlgSettingsDisplayTheme:             "Jigo",
-    btnDlgSettingsDisplayThemeDark:         "Duhu",
-    btnDlgSettingsDisplayThemeLight:        "Haske",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Harshe",
+    lblStgDisplayTheme:                     "Jigo",
+    btnStgDisplayThemeDark:                 "Duhu",
+    btnStgDisplayThemeLight:                "Haske",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "Tsara da sake lambobi fayilolin bidiyo ta hanyar ja-da-sauke.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "Tsara da sake lambobi fayilolin bidiyo ta hanyar ja-da-sauke.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Babi",
@@ -4744,19 +4792,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "Ṣe akopọ awọn iho lori sisọ silẹ",
     tipHdrCompactAll:                       "Ṣe akopọ awọn aafo iho ninu gbogbo awọn ipin",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Eto",
-    tabDlgSettingsDisplay:                  "Ifihan",
-    tabDlgSettingsAbout:                    "Nipa",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Eto",
+    tipStgBack:                             "Pada",
+    tabStgDisplay:                          "Ifihan",
+    tabStgAbout:                            "Nipa",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Èdè",
-    lblDlgSettingsDisplayTheme:             "Àtùpà",
-    btnDlgSettingsDisplayThemeDark:         "Dudu",
-    btnDlgSettingsDisplayThemeLight:        "Fẹ́lẹ́fẹ́lẹ́",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Èdè",
+    lblStgDisplayTheme:                     "Àtùpà",
+    btnStgDisplayThemeDark:                 "Dudu",
+    btnStgDisplayThemeLight:                "Fẹ́lẹ́fẹ́lẹ́",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "Tẹle ati tun nọmba awọn faili fidio nipasẹ fifa-ati-silẹ.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "Tẹle ati tun nọmba awọn faili fidio nipasẹ fifa-ati-silẹ.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Ori",
@@ -4842,19 +4891,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "వదిలివేసినప్పుడు స్లాట్‌లను కుదించండి",
     tipHdrCompactAll:                       "అన్ని అధ్యాయాలలో స్లాట్ ఖాళీలను కుదించండి",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "సెట్టింగ్‌లు",
-    tabDlgSettingsDisplay:                  "ప్రదర్శన",
-    tabDlgSettingsAbout:                    "గురించి",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "సెట్టింగ్‌లు",
+    tipStgBack:                             "వెనుకకు",
+    tabStgDisplay:                          "ప్రదర్శన",
+    tabStgAbout:                            "గురించి",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "భాష",
-    lblDlgSettingsDisplayTheme:             "థీమ్",
-    btnDlgSettingsDisplayThemeDark:         "ముదురు",
-    btnDlgSettingsDisplayThemeLight:        "లేత",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "భాష",
+    lblStgDisplayTheme:                     "థీమ్",
+    btnStgDisplayThemeDark:                 "ముదురు",
+    btnStgDisplayThemeLight:                "లేత",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "డ్రాగ్-అండ్-డ్రాప్ ద్వారా వీడియో షాట్ ఫైల్‌లను క్రమబద్ధీకరించండి మరియు తిరిగి నంబర్ చేయండి.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "డ్రాగ్-అండ్-డ్రాప్ ద్వారా వీడియో షాట్ ఫైల్‌లను క్రమబద్ధీకరించండి మరియు తిరిగి నంబర్ చేయండి.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "అధ్యాయం",
@@ -4940,19 +4990,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "सोडल्यावर स्लॉट संकुचित करा",
     tipHdrCompactAll:                       "सर्व अध्यायांमधील स्लॉटमधील अंतर संकुचित करा",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "सेटिंग्ज",
-    tabDlgSettingsDisplay:                  "प्रदर्शन",
-    tabDlgSettingsAbout:                    "बद्दल",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "सेटिंग्ज",
+    tipStgBack:                             "मागे",
+    tabStgDisplay:                          "प्रदर्शन",
+    tabStgAbout:                            "बद्दल",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "भाषा",
-    lblDlgSettingsDisplayTheme:             "थीम",
-    btnDlgSettingsDisplayThemeDark:         "गडद",
-    btnDlgSettingsDisplayThemeLight:        "हलका",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "भाषा",
+    lblStgDisplayTheme:                     "थीम",
+    btnStgDisplayThemeDark:                 "गडद",
+    btnStgDisplayThemeLight:                "हलका",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "ड्रॅग-अँड-ड्रॉपद्वारे व्हिडिओ शॉट फाइल्सची क्रमवारी लावा आणि पुन्हा क्रमांकित करा.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "ड्रॅग-अँड-ड्रॉपद्वारे व्हिडिओ शॉट फाइल्सची क्रमवारी लावा आणि पुन्हा क्रमांकित करा.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "अध्याय",
@@ -5038,19 +5089,20 @@ const TRANSLATIONS = {
     tipHdrCompactOnDrop:                    "I-compact ang mga slot sa pag-drop",
     tipHdrCompactAll:                       "I-compact ang mga puwang ng slot sa lahat ng kabanata",
 
-    // Prefix:DlgSettings - Scope:settings dialog
-    ttlDlgSettings:                         "Mga Setting",
-    tabDlgSettingsDisplay:                  "Display",
-    tabDlgSettingsAbout:                    "Tungkol sa",
+    // Prefix:Stg - Scope:settings view
+    ttlStg:                                 "Mga Setting",
+    tipStgBack:                             "Bumalik",
+    tabStgDisplay:                          "Display",
+    tabStgAbout:                            "Tungkol sa",
 
-    // Prefix:DlgSettingsDisplay - Scope:settings dialog (Display tab)
-    lblDlgSettingsDisplayLang:              "Wika",
-    lblDlgSettingsDisplayTheme:             "Tema",
-    btnDlgSettingsDisplayThemeDark:         "Madilim",
-    btnDlgSettingsDisplayThemeLight:        "Maliwanag",
+    // Prefix:StgDisplay - Scope:settings view (Display tab)
+    lblStgDisplayLang:                      "Wika",
+    lblStgDisplayTheme:                     "Tema",
+    btnStgDisplayThemeDark:                 "Madilim",
+    btnStgDisplayThemeLight:                "Maliwanag",
 
-    // Prefix:DlgSettingsAbout - Scope:settings dialog (About tab)
-    msgDlgSettingsAboutDesc:                "Pagkakasunod-sunod at muling pagbibigay ng numero sa mga file ng video shot sa pamamagitan ng drag-and-drop.",
+    // Prefix:StgAbout - Scope:settings view (About tab)
+    msgStgAboutDesc:                        "Pagkakasunod-sunod at muling pagbibigay ng numero sa mga file ng video shot sa pamamagitan ng drag-and-drop.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Kabanata",

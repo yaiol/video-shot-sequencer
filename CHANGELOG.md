@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.4 — 2026-09-27
+
+- Settings now open as a full-window page with its tabs listed down the left, instead of a dialog. The back arrow, the Settings button or Esc returns you to your shots exactly as you left them
+- Notices that appear while a dialog is open now show on top of it, instead of blurred behind it
+- Text fields and drop-down lists have a lighter background, so they stand out more from the surface around them
+- Build the app's SVG icons as React components (vite-plugin-svgr + svgo)
+- Rewrite the README, with a screenshot and logo
+
 ## 1.0.3 — 2026-08-23
 
 - The folder picker now opens where you last chose a folder, instead of starting in Downloads every time

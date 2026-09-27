@@ -5,7 +5,7 @@
 //   language via the i18n key workflow. Full procedure: see CLAUDE-i18n.md.
 //   Never paste translations by hand. The scripts ARE the work.
 import React, { useEffect, useMemo, useState, useCallback, useRef } from 'react';
-import { Settings, HelpCircle, Sun, Moon, X, ScrollText, Lock, LockOpen, ChevronRight, ChevronDown, Layers, StretchHorizontal, Combine } from 'lucide-react';
+import { Settings, HelpCircle, X, Lock, LockOpen, ChevronRight, ChevronDown, Layers, StretchHorizontal, Combine } from 'lucide-react';
 import pkg from '../package.json';
 import { useT, LANGUAGES } from './i18n-gen';
 import { checkForUpdate, getUrl } from './lib/update-check';
@@ -13,12 +13,17 @@ import { UpdateBanner } from './lib/ui-update-banner';
 import { AppHeader } from './lib/ui-header';
 import { NumberField } from './lib/ui-ctl-numberfield';
 import { GithubIcon } from './lib/ui-icons';
-import yaiolLogo from './assets/yaiol-logo.svg';
+import { SettingsView } from './lib/ui-settings';
 // Storage namespace - single source: package.json `storagePrefix`. Never hardcode a prefix.
 const STORAGE_PREFIX = pkg.storagePrefix;
 
 const APP_NAME    = pkg.productName;
 const APP_VERSION = pkg.version;
+// The full build IDENTITY shown to the user: the release version plus the build counter (the 4th
+// segment a buffered commit bumps), or just the release version on a clean release build.
+// ⚠ CLAUDE: APP_VERSION itself stays plain 3-part semver and must NOT absorb this - the update
+// check compares it against the published beacon, and a 4-part string is not semver. Display only.
+const APP_VERSION_BUILD = pkg.build?.buildNumber ? `${pkg.version}.${pkg.build.buildNumber}` : pkg.version;
 
 // GitHub source - owner is constant (yaiol); repo name is the app id (pkg.name).
 const GITHUB_URL = `https://github.com/yaiol/${pkg.name}`;
@@ -935,7 +940,7 @@ export default function App() {
     <div className="app-root" onDragEnd={onDragEnd} onDragOver={onWindowDragOver} onDrop={onWindowDrop}>
       {/* ── Update banner - notify-only, dismissible. See ../CLAUDE.md → "Update feed". ── */}
       <UpdateBanner info={updateInfo} appId={pkg.name} lang={lang} storagePrefix={STORAGE_PREFIX} t={t} onClose={() => setUpdateInfo(null)} />
-      <AppHeader appName={APP_NAME} appVersion={APP_VERSION}>
+      <AppHeader appName={APP_NAME} appVersion={APP_VERSION_BUILD}>
         {config && (
           <div className="barh-grp">
             <NumberField min={1} max={4} width={44} value={config.chapterDigits}
@@ -1000,23 +1005,22 @@ export default function App() {
           <button className="btn icon" onClick={() => window.open(getUrl(pkg.name, lang.replace(/_/g, '-'), 'help'), '_blank')} title={t('tipHdrHelp')} aria-label={t('tipHdrHelp')}>
             <HelpCircle />
           </button>
-          <button className="btn icon" onClick={() => setSettingsOpen(true)} title={t('tipHdrSettings')} aria-label={t('tipHdrSettings')}>
+          <button className={`btn icon stg-toggle ${settingsOpen ? 'active' : ''}`} onClick={() => setSettingsOpen(o => !o)} title={t('tipHdrSettings')} aria-label={t('tipHdrSettings')} aria-pressed={settingsOpen}>
             <Settings />
           </button>
         </div>
       </AppHeader>
 
+      {/* .app-main content region (Rule 14) — bar-status below is its chrome sibling */}
+      <div className="app-main">
       {settingsOpen && (
-        <SettingsDialog
-          t={t}
+        <SettingsView
+          t={t} appName={APP_NAME} appVersion={APP_VERSION_BUILD} languages={LANGUAGES}
           lang={lang} setLang={setLang}
           theme={theme} setTheme={setTheme}
           onClose={() => setSettingsOpen(false)}
         />
       )}
-
-      {/* .app-main content region (Rule 14) — bar-status below is its chrome sibling */}
-      <div className="app-main">
       <div className="app-scroll app-scroll-y workspace" onDragOver={e => e.preventDefault()} onDrop={onDrop}>
         <div className="main-col">
         {!folder && (
@@ -1291,89 +1295,6 @@ function openExternal(folder, filename) {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ path: fullPath }),
   });
-}
-
-function SettingsDialog({ t, lang, setLang, theme, setTheme, onClose }) {
-  const [activeTab, setActiveTab] = useState('display');
-
-  useEffect(() => {
-    const onKey = (e) => { if (e.key === 'Escape') onClose(); };
-    window.addEventListener('keydown', onKey);
-    return () => window.removeEventListener('keydown', onKey);
-  }, [onClose]);
-
-  const TABS = [
-    { key: 'display', label: t('tabDlgSettingsDisplay'), icon: Sun },
-    { key: 'about',   label: t('tabDlgSettingsAbout'),   icon: ScrollText },
-  ];
-
-  return (
-    <div className="dl-backdrop" onMouseDown={e => { if (e.target === e.currentTarget) onClose(); }}>
-      <div className="dlg" onClick={e => e.stopPropagation()}>
-        <div className="dlg-head">
-          <span className="dlg-title"><Settings />{t('ttlDlgSettings')}</span>
-          <button className="dl-close" onClick={onClose} title={t('btnGlobalCancel')} aria-label={t('btnGlobalCancel')}>
-            <X />
-          </button>
-        </div>
-
-        <div className="tabs">
-          {TABS.map(({ key, label, icon: TabIcon }) => (
-            <button
-              key={key}
-              className={`tab ${activeTab === key ? 'active' : ''}`}
-              onClick={() => setActiveTab(key)}
-            >
-              <TabIcon />{label}
-            </button>
-          ))}
-        </div>
-
-        {/* All tab panels stacked in one grid cell → dialog sizes to the tallest (Display), no yoyo on tab switch. Rule DLG-8. */}
-        <div className="dlg-body" style={{ display: 'grid' }}>
-          <div style={{ gridArea: '1/1', visibility: activeTab === 'display' ? 'visible' : 'hidden', zIndex: activeTab === 'display' ? 1 : 0, background: 'var(--dlg-bgd)' }}>
-              <div className="dlg-field">
-                <label className="dlg-field-label">{t('lblDlgSettingsDisplayLang')}</label>
-                <select className="select" value={lang} onChange={e => setLang(e.target.value)}>
-                  {LANGUAGES.map(l => <option key={l.key} value={l.key}>{l.label}</option>)}
-                </select>
-              </div>
-              <div className="dlg-field divider">
-                <label className="dlg-field-label">{t('lblDlgSettingsDisplayTheme')}</label>
-                <div className="opt-btns">
-                  {[
-                    { key: 'dark',  Icon: Moon, label: t('btnDlgSettingsDisplayThemeDark') },
-                    { key: 'light', Icon: Sun,  label: t('btnDlgSettingsDisplayThemeLight') },
-                  ].map(({ key, Icon, label }) => {
-                    const active = theme === key;
-                    return (
-                      <button
-                        key={key}
-                        className={`opt-btn ${active ? 'active' : ''}`}
-                        onClick={() => setTheme(key)}
-                      >
-                        <Icon />
-                        <span>{label}</span>
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-          </div>
-
-          <div style={{ gridArea: '1/1', visibility: activeTab === 'about' ? 'visible' : 'hidden', zIndex: activeTab === 'about' ? 1 : 0, background: 'var(--dlg-bgd)' }}>
-            <div className="dlg-about">
-              <img src={yaiolLogo} alt="Yaiol" style={{ width: 120, height: 'auto', flexShrink: 0 }} />
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 6, minWidth: 0 }}>
-                <div className="dlg-about-id">{APP_NAME} <b>v{APP_VERSION}</b> by yaiol</div>
-                <div className="dlg-about-desc">{t('msgDlgSettingsAboutDesc')}</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
 }
 
 function Pile({ files, version, folder, cfg, gen, t, onDragStart, onDragOver, dropEdge }) {
