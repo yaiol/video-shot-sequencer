@@ -8,8 +8,9 @@ import React, { useEffect, useMemo, useState, useCallback, useRef } from 'react'
 import { Settings, HelpCircle, X, Lock, LockOpen, ChevronRight, ChevronDown, Layers, StretchHorizontal, Combine } from 'lucide-react';
 import pkg from '../package.json';
 import { useT, LANGUAGES } from './i18n-gen';
-import { checkForUpdate, getUrl } from './lib/update-check';
-import { UpdateBanner } from './lib/ui-update-banner';
+import { getUrl } from './lib/site-url';
+import { NewsLoader } from './lib/ui-news-loader';
+import { NewsSetting } from './lib/ui-news-setting';
 import { AppHeader } from './lib/ui-header';
 import { NumberField } from './lib/ui-ctl-numberfield';
 import { GithubIcon } from './lib/ui-icons';
@@ -276,7 +277,14 @@ export default function App() {
   const [lang,      setLang]      = useState(() => localStorage.getItem(LS_LANG)  || DEFAULT_LANG);
   const [theme,     setTheme]     = useState(() => localStorage.getItem(LS_THEME) || DEFAULT_THEME);
   const [settingsOpen, setSettingsOpen] = useState(false);
-  const [updateInfo,   setUpdateInfo]     = useState(null);
+  const [newsEnabled, setNewsEnabled] = useState(true);
+  useEffect(() => {
+    fetch(`${API}/news-settings`).then(r => r.json()).then(s => setNewsEnabled(s.enabled)).catch(() => {});
+  }, []);
+  function toggleNews(enabled) {
+    setNewsEnabled(enabled);
+    fetch(`${API}/news-settings`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ enabled }) }).catch(() => {});
+  }
   const [confirmState, setConfirmState]   = useState(null); // { message, resolve } - inline confirm (window.confirm is blocked in packaged Electron)
 
   const t = useT(lang);
@@ -296,11 +304,6 @@ export default function App() {
     document.documentElement.setAttribute('data-theme', theme);
   }, [theme]);
 
-  // Check for a new version once on launch (silent if up to date / offline / skipped)
-  useEffect(() => {
-    checkForUpdate({ appId: pkg.name, alias: STORAGE_PREFIX, currentVersion: APP_VERSION })
-      .then(u => { if (u) setUpdateInfo(u); });
-  }, []);
   const [status, setStatus]       = useState('');
   const [statusKind, setStatusKind] = useState('');
   const [busy,   setBusy]         = useState(false);
@@ -938,8 +941,8 @@ export default function App() {
   // ──────────────────────────────────────────────────────────────────────
   return (
     <div className="app-root" onDragEnd={onDragEnd} onDragOver={onWindowDragOver} onDrop={onWindowDrop}>
-      {/* ── Update banner - notify-only, dismissible. See ../CLAUDE.md → "Update feed". ── */}
-      <UpdateBanner info={updateInfo} appId={pkg.name} lang={lang} storagePrefix={STORAGE_PREFIX} t={t} onClose={() => setUpdateInfo(null)} />
+      {/* ── A new version (first) and the yaiol news, in one dialog ── */}
+      <NewsLoader api={API} lang={lang} t={t} />
       <AppHeader appName={APP_NAME} appVersion={APP_VERSION_BUILD}>
         {config && (
           <div className="barh-grp">
@@ -1018,6 +1021,9 @@ export default function App() {
           t={t} appName={APP_NAME} appVersion={APP_VERSION_BUILD} languages={LANGUAGES}
           lang={lang} setLang={setLang}
           theme={theme} setTheme={setTheme}
+          generalExtra={(
+            <NewsSetting enabled={newsEnabled} onChange={toggleNews} label={t('lblStgGeneralNews')} />
+          )}
           onClose={() => setSettingsOpen(false)}
         />
       )}

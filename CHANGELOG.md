@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.5 — 2026-10-23
+
+- A newer version now appears as a card in a news dialog instead of a banner strip: the card lists the release notes newer than the running version, links to the download page, and Don't show again hides it until a still newer version is out
+- Occasional yaiol announcements appear in the same dialog; Settings > General has a new Show news from yaiol switch that turns them off completely (the new-version card is not governed by it)
+- Launching the app a second time brings the open window forward instead of starting a second copy (before, the second copy ran on empty settings)
+- Number fields show the corrected value at once: a value typed outside the allowed range snaps to the nearest allowed number immediately instead of keeping the typed text
+
 ## 1.0.4 — 2026-09-27
 
 - Settings now open as a full-window page with its tabs listed down the left, instead of a dialog. The back arrow, the Settings button or Esc returns you to your shots exactly as you left them

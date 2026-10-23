@@ -1,7 +1,7 @@
 {
   "name": "video-shot-sequencer",
   "productName": "Video Shot Sequencer",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "license": "MIT",
   "description": "Sequence and renumber video shot files via drag-and-drop",
   "private": true,

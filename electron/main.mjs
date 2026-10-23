@@ -8,6 +8,7 @@ import express from "express";
 import { fileURLToPath } from "node:url";
 import pkg from "../package.json" with { type: "json" };
 import { mark, dumpStartupTiming } from "./startup-timing.mjs";
+import { registerNewsRoutes } from "./news.mjs";
 import { lastDir, rememberDir } from "./dialog-memory.mjs";
 mark("electron boot + module imports");
 
@@ -264,6 +265,8 @@ function startServer(callback) {
     }
   });
 
+  registerNewsRoutes(api, { appId: pkg.name, appVersion: pkg.version });
+
   findFreePort(4000, (port) => {
     SERVER_PORT = port;
     api.listen(port, () => {
@@ -319,7 +322,19 @@ function createWindow(port) {
   mainWindow.webContents.setWindowOpenHandler(({ url }) => { shell.openExternal(url); return { action: 'deny' }; });
 }
 
-app.whenReady().then(() => { mark("app.whenReady");
+// ⚠ CLAUDE: ONE instance per profile. A second process shares userData and cannot open the first one's
+// locked storage, so it ran on empty settings (defaults) - a different library, a flat app list. The
+// second launch now just brings the first window forward.
+const gotInstanceLock = app.requestSingleInstanceLock();
+if (!gotInstanceLock) app.quit();
+app.on('second-instance', () => {
+  if (mainWindow) {
+    if (mainWindow.isMinimized()) mainWindow.restore();
+    mainWindow.focus();
+  }
+});
+
+if (gotInstanceLock) app.whenReady().then(() => { mark("app.whenReady");
   Menu.setApplicationMenu(null);
   startServer((port) => createWindow(port));
 });
