@@ -9,6 +9,7 @@ import { fileURLToPath } from "node:url";
 import pkg from "../package.json" with { type: "json" };
 import { mark, dumpStartupTiming } from "./startup-timing.mjs";
 import { registerNewsRoutes } from "./news.mjs";
+import { registerWindowRoutes, watchWindowState } from "./window-bar.mjs";
 import { lastDir, rememberDir } from "./dialog-memory.mjs";
 mark("electron boot + module imports");
 
@@ -267,6 +268,8 @@ function startServer(callback) {
 
   registerNewsRoutes(api, { appId: pkg.name, appVersion: pkg.version });
 
+  registerWindowRoutes(api, () => mainWindow);
+
   findFreePort(4000, (port) => {
     SERVER_PORT = port;
     api.listen(port, () => {
@@ -284,7 +287,7 @@ function createWindow(port) {
     height: 820,
     minWidth: 900,
     minHeight: 600,
-    frame: true,
+    frame: false,   // the app draws its own window bar (UisBarWindow)
     icon: path.join(__dirname, isDev ? '../public/app.ico' : '../dist/app.ico'),
     webPreferences: {
       nodeIntegration: false,
@@ -300,6 +303,7 @@ function createWindow(port) {
   } else {
     mainWindow.loadFile(path.join(__dirname, "../dist/index.html"), { query });
   }
+  watchWindowState(mainWindow);
   mark("BrowserWindow created");
   mainWindow.webContents.once('did-finish-load', () => { mark("renderer did-finish-load"); dumpStartupTiming({ appName: APP_NAME, isDev, userDataPath: app.getPath("userData") }); });
   mainWindow.webContents.on('did-finish-load', () => mainWindow.setTitle(isDev ? `${APP_NAME} (Dev)` : APP_NAME));

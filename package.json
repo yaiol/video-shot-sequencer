@@ -1,9 +1,9 @@
 {
   "name": "video-shot-sequencer",
   "productName": "Video Shot Sequencer",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "license": "MIT",
-  "description": "Sequence and renumber video shot files via drag-and-drop",
+  "description": "Reorder your video shots by dragging, and the app renumbers every file on disk to match.",
   "private": true,
   "author": "yaiol",
   "main": "electron/main.mjs",

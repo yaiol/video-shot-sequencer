@@ -9,12 +9,12 @@ import { Settings, HelpCircle, X, Lock, LockOpen, ChevronRight, ChevronDown, Lay
 import pkg from '../package.json';
 import { useT, LANGUAGES } from './i18n-gen';
 import { getUrl } from './lib/site-url';
-import { NewsLoader } from './lib/ui-news-loader';
-import { NewsSetting } from './lib/ui-news-setting';
-import { AppHeader } from './lib/ui-header';
-import { NumberField } from './lib/ui-ctl-numberfield';
-import { GithubIcon } from './lib/ui-icons';
-import { SettingsView } from './lib/ui-settings';
+import { UisNewsLoader, UisBtnUpdate, UisBtnNews } from './lib/uis-news-loader';
+import { UisAppHeader } from './lib/uis-header';
+import { UisBarWindow, LbsHokWindow } from './lib/uis-bar-window';
+import { UisNum } from './lib/uis-num';
+import { UisIcoGithub } from './lib/uis-icons';
+import { UisStgView } from './lib/uis-stg-view';
 // Storage namespace - single source: package.json `storagePrefix`. Never hardcode a prefix.
 const STORAGE_PREFIX = pkg.storagePrefix;
 
@@ -277,6 +277,8 @@ export default function App() {
   const [lang,      setLang]      = useState(() => localStorage.getItem(LS_LANG)  || DEFAULT_LANG);
   const [theme,     setTheme]     = useState(() => localStorage.getItem(LS_THEME) || DEFAULT_THEME);
   const [settingsOpen, setSettingsOpen] = useState(false);
+  // The window bar: its three buttons act through the main process, which also says when the window is maximized.
+  const windowBar = LbsHokWindow(API);
   const [newsEnabled, setNewsEnabled] = useState(true);
   useEffect(() => {
     fetch(`${API}/news-settings`).then(r => r.json()).then(s => setNewsEnabled(s.enabled)).catch(() => {});
@@ -940,27 +942,44 @@ export default function App() {
   // Render
   // ──────────────────────────────────────────────────────────────────────
   return (
-    <div className="app-root" onDragEnd={onDragEnd} onDragOver={onWindowDragOver} onDrop={onWindowDrop}>
+    <div className="uis-app-root" onDragEnd={onDragEnd} onDragOver={onWindowDragOver} onDrop={onWindowDrop}>
       {/* ── A new version (first) and the yaiol news, in one dialog ── */}
-      <NewsLoader api={API} lang={lang} t={t} />
-      <AppHeader appName={APP_NAME} appVersion={APP_VERSION_BUILD}>
+      <UisNewsLoader api={API} lang={lang} t={t} />
+      {/* ── Window bar ── the app's own title bar: the window has no system frame. */}
+      <UisBarWindow appName={APP_NAME} appVersion={APP_VERSION_BUILD} iconSrc="./app.png" maximized={windowBar.maximized}
+        tipMinimize={t('tipWinMinimize')} tipMaximize={t('tipWinMaximize')} tipRestore={t('tipWinRestore')} tipClose={t('tipWinClose')}
+        onMinimize={windowBar.minimize} onMaximize={windowBar.maximize} onClose={windowBar.close}>
+        <button className={`uis-barh-window-btn uis-stg-toggle ${settingsOpen ? 'active' : ''}`} onClick={() => setSettingsOpen(o => !o)} title={t('tipHdrSettings')} aria-label={t('tipHdrSettings')} aria-pressed={settingsOpen}>
+          <Settings />
+        </button>
+        <button className="uis-barh-window-btn" onClick={() => window.open(getUrl(pkg.name, lang.replace(/_/g, '-'), 'help'), '_blank')} title={t('tipHdrHelp')} aria-label={t('tipHdrHelp')}>
+          <HelpCircle />
+        </button>
+        <button className="uis-barh-window-btn" onClick={() => window.open(GITHUB_URL, '_blank')} title="GitHub" aria-label="GitHub">
+          <UisIcoGithub />
+        </button>
+        <UisBtnUpdate t={t} />
+        <UisBtnNews t={t} />
+      </UisBarWindow>
+      {/* The name and the version are in the window bar, so the header holds the work buttons only. */}
+      <UisAppHeader appName={APP_NAME} appVersion={APP_VERSION_BUILD} bare>
         {config && (
-          <div className="barh-grp">
-            <NumberField min={1} max={4} width={44} value={config.chapterDigits}
+          <div className="uis-barh-grp">
+            <UisNum min={1} max={4} width={44} value={config.chapterDigits}
                    title={t('tipHdrDigitsChapter')} aria-label={t('tipHdrDigitsChapter')}
                    onChange={v => changeWidth('chapterDigits', v)} />
-            <NumberField min={1} max={4} width={44} value={config.slotDigits}
+            <UisNum min={1} max={4} width={44} value={config.slotDigits}
                    title={t('tipHdrDigitsSlot')} aria-label={t('tipHdrDigitsSlot')}
                    onChange={v => changeWidth('slotDigits', v)} />
-            <NumberField min={1} max={4} width={44} value={config.versionDigits}
+            <UisNum min={1} max={4} width={44} value={config.versionDigits}
                    title={t('tipHdrDigitsVersion')} aria-label={t('tipHdrDigitsVersion')}
                    onChange={v => changeWidth('versionDigits', v)} />
           </div>
         )}
         {config && (
-          <div className="barh-grp">
+          <div className="uis-barh-grp">
             <button
-              className={`btn icon${grouped ? ' active' : ''}`}
+              className={`uis-btn ico${grouped ? ' active' : ''}`}
               onClick={toggleGrouped}
               title={grouped ? t('tipHdrUngroup') : t('tipHdrGroup')}
               aria-label={grouped ? t('tipHdrUngroup') : t('tipHdrGroup')}
@@ -968,7 +987,7 @@ export default function App() {
               <Layers />
             </button>
             <button
-              className={`btn icon${config.preserveGaps !== false ? ' active' : ''}`}
+              className={`uis-btn ico${config.preserveGaps !== false ? ' active' : ''}`}
               onClick={togglePreserveGaps}
               title={config.preserveGaps !== false ? t('tipHdrCompactOnDrop') : t('tipHdrPreserveGaps')}
               aria-label={config.preserveGaps !== false ? t('tipHdrCompactOnDrop') : t('tipHdrPreserveGaps')}
@@ -977,7 +996,7 @@ export default function App() {
             </button>
             {anyChapterHasGaps && (
               <button
-                className="btn icon"
+                className="uis-btn ico"
                 onClick={compactAll}
                 title={t('tipHdrCompactAll')}
                 aria-label={t('tipHdrCompactAll')}
@@ -989,48 +1008,36 @@ export default function App() {
         )}
         {isDirty && (
           <>
-            <button className="btn" onClick={discardPending} disabled={busy}>{t('btnGlobalCancel')}</button>
-            <button className="btn primary" onClick={commitPending} disabled={busy || pendingCount === 0}>
+            <button className="uis-btn" onClick={discardPending} disabled={busy}>{t('btnGlobalCancel')}</button>
+            <button className="uis-btn primary" onClick={commitPending} disabled={busy || pendingCount === 0}>
               {t('btnHdrCommit')} ({pendingCount})
             </button>
           </>
         )}
-        <button className="btn" onClick={() => refresh()} disabled={!folder || busy || isDirty}
+        <button className="uis-btn" onClick={() => refresh()} disabled={!folder || busy || isDirty}
                 title={isDirty ? t('tipHdrRefreshDisabled') : t('tipHdrRefresh')}>
           {t('btnHdrRefresh')}
         </button>
-        <button className="btn primary" onClick={openFolder} disabled={busy}>{t('btnHdrOpenFolder')}</button>
-        <span className="bar-spacer" />
-        <div className="barh-grp">
-          <button className="btn icon" onClick={() => window.open(GITHUB_URL, '_blank')} title="GitHub" aria-label="GitHub">
-            <GithubIcon />
-          </button>
-          <button className="btn icon" onClick={() => window.open(getUrl(pkg.name, lang.replace(/_/g, '-'), 'help'), '_blank')} title={t('tipHdrHelp')} aria-label={t('tipHdrHelp')}>
-            <HelpCircle />
-          </button>
-          <button className={`btn icon stg-toggle ${settingsOpen ? 'active' : ''}`} onClick={() => setSettingsOpen(o => !o)} title={t('tipHdrSettings')} aria-label={t('tipHdrSettings')} aria-pressed={settingsOpen}>
-            <Settings />
-          </button>
-        </div>
-      </AppHeader>
+        <button className="uis-btn primary" onClick={openFolder} disabled={busy}>{t('btnHdrOpenFolder')}</button>
+      </UisAppHeader>
 
-      {/* .app-main content region (Rule 14) — bar-status below is its chrome sibling */}
-      <div className="app-main">
+      {/* .uis-app-main content region (Rule 14) — bar-status below is its chrome sibling */}
+      <div className="uis-app-main">
       {settingsOpen && (
-        <SettingsView
+        <UisStgView
           t={t} appName={APP_NAME} appVersion={APP_VERSION_BUILD} languages={LANGUAGES}
           lang={lang} setLang={setLang}
           theme={theme} setTheme={setTheme}
           generalExtra={(
-            <NewsSetting enabled={newsEnabled} onChange={toggleNews} label={t('lblStgGeneralNews')} />
+            <div className="uis-fld-labelled divider"><label className="uis-chk-lbl"><input type="checkbox" className="uis-chk-box" checked={newsEnabled} onChange={e => toggleNews(e.target.checked)} />{t('lblStgGeneralNews')}</label></div>
           )}
           onClose={() => setSettingsOpen(false)}
         />
       )}
-      <div className="app-scroll app-scroll-y workspace" onDragOver={e => e.preventDefault()} onDrop={onDrop}>
+      <div className="uis-app-scroll uis-app-scroll-y workspace" onDragOver={e => e.preventDefault()} onDrop={onDrop}>
         <div className="main-col">
         {!folder && (
-          <div className="empty">
+          <div className="uis-emp">
             <h2>{t('ttlAppOpenFolder')}</h2>
             <p>{t('msgAppOpenFolderDesc1')
                   .replace('%APP%', APP_NAME)
@@ -1040,7 +1047,7 @@ export default function App() {
         )}
 
         {folder && chapters.length === 0 && config && (
-          <div className="empty">
+          <div className="uis-emp">
             <h2>{t('ttlAppNoMatch')}</h2>
             <p>{t('msgAppNoMatchDesc').replace('%PATTERN%', 'CCSVExtra.ext')}</p>
             <p>{t('msgAppNoMatchHint')}</p>
@@ -1079,7 +1086,7 @@ export default function App() {
                   title={isCollapsed ? t('tipChapterExpand') : t('tipChapterCollapse')}
                   aria-label={isCollapsed ? t('tipChapterExpand') : t('tipChapterCollapse')}
                 >
-                  {isCollapsed ? <ChevronRight className="icon-inline" /> : <ChevronDown className="icon-inline" />}
+                  {isCollapsed ? <ChevronRight className="uis-ico-inline" /> : <ChevronDown className="uis-ico-inline" />}
                 </button>
                 <span className="label mono">{t('lblChapter')} {pad(ch.chapter, config.chapterDigits)}</span>
                 <span className="chapter-count">{t('lblChapterShots').replace('%N%', ch.shots.length)}</span>
@@ -1088,7 +1095,7 @@ export default function App() {
                     <>
                       <span className="gap-badge">{t('lblChapterGaps').replace('%N%', chapterGapCount(ch))}</span>
                       <button
-                        className="btn icon small"
+                        className="uis-btn ico small"
                         onClick={() => compactChapter(ch.chapter)}
                         title={t('tipChapterCompact')}
                         aria-label={t('tipChapterCompact')}
@@ -1099,7 +1106,7 @@ export default function App() {
                     </>
                   )}
                   <button
-                    className={`btn icon small${ch.locked ? ' active' : ''}`}
+                    className={`uis-btn ico small${ch.locked ? ' active' : ''}`}
                     onClick={() => toggleLock(ch.chapter)}
                     title={ch.locked ? t('tipChapterUnlock') : t('tipChapterLock')}
                     aria-label={ch.locked ? t('tipChapterUnlock') : t('tipChapterLock')}
@@ -1144,7 +1151,7 @@ export default function App() {
                                 && dragTarget.slot === sh.slot
                                 && dragTarget.version === v;
                               return (
-                                <Pile
+                                <UilShotGrouped
                                   key={v}
                                   files={pileFiles}
                                   version={v}
@@ -1164,7 +1171,7 @@ export default function App() {
                                 && dragTarget.slot === sh.slot
                                 && dragTarget.filename === f.filename;
                               return (
-                                <Thumb
+                                <UilShotUngrouped
                                   key={f.filename}
                                   file={f}
                                   folder={folder}
@@ -1187,7 +1194,7 @@ export default function App() {
                   );
                 })}
                 {ch.shots.length === 0 && (
-                  <div style={{ padding: 18, color: 'var(--text-mute)', textAlign: 'center', fontSize: 12 }}>
+                  <div style={{ padding: 18, color: 'var(--uis-text-mute)', textAlign: 'center', fontSize: 12 }}>
                     {t('empChapterEmpty')}
                   </div>
                 )}
@@ -1198,7 +1205,7 @@ export default function App() {
 
         {folder && config && (
           <div className="add-chapter-row">
-            <button className="btn" onClick={addChapter} disabled={busy}>{t('btnChapterAdd')}</button>
+            <button className="uis-btn" onClick={addChapter} disabled={busy}>{t('btnChapterAdd')}</button>
           </div>
         )}
         </div>
@@ -1246,7 +1253,7 @@ export default function App() {
       </div>
       </div>
 
-      <div className="bar-status">
+      <div className="uis-bar-status">
         <span className={statusKind}>{status || (busy ? t('msgStatusbarWorking') : t('msgStatusbarReady'))}</span>
         <span style={{ flex: 1 }} />
         <span title={folder}>{folder || '- no folder -'}</span>
@@ -1255,7 +1262,7 @@ export default function App() {
       {/* Inline confirm - window.confirm is blocked in packaged Electron. See ../CLAUDE.md "Electron UI Constraints" + DLG-6. */}
       {confirmState && (
         <div
-          className="dl-backdrop"
+          className="uis-dl-backdrop"
           onMouseDown={e => {
             if (e.target === e.currentTarget) { confirmState.resolve(false); setConfirmState(null); }
           }}
@@ -1263,21 +1270,21 @@ export default function App() {
             if (e.key === 'Escape') { confirmState.resolve(false); setConfirmState(null); }
           }}
         >
-          <div className="dlp" onClick={e => e.stopPropagation()}>
-              <button className="dl-close" onClick={() => { confirmState.resolve(false); setConfirmState(null); }}><X /></button>
-              <p className="dlp-title" style={{ marginBottom: 24 }}>
+          <div className="uis-dlp" onClick={e => e.stopPropagation()}>
+              <button className="uis-dl-close" onClick={() => { confirmState.resolve(false); setConfirmState(null); }}><X /></button>
+              <p className="uis-dlp-title" style={{ marginBottom: 24 }}>
                 {confirmState.message}
               </p>
-              <div className="dlp-foot">
+              <div className="uis-dlp-foot">
                 <button
-                  className="btn subtle"
+                  className="uis-btn subtle"
                   ref={el => { if (el && !el.dataset.didFocus) { el.dataset.didFocus = '1'; el.focus(); } }}
                   onClick={() => { confirmState.resolve(false); setConfirmState(null); }}
                 >
                   {t('btnGlobalCancel')}
                 </button>
                 <button
-                  className="btn primary"
+                  className="uis-btn primary"
                   onClick={() => { confirmState.resolve(true); setConfirmState(null); }}
                 >
                   {t('btnGlobalDiscard')}
@@ -1291,7 +1298,7 @@ export default function App() {
 }
 
 // ────────────────────────────────────────────────────────────────────────
-// Thumb - image renders as <img>, video as <video preload="metadata"> so
+// UilShotUngrouped - image renders as <img>, video as <video preload="metadata"> so
 // the browser fetches just enough to show the first frame.
 // ────────────────────────────────────────────────────────────────────────
 function openExternal(folder, filename) {
@@ -1303,7 +1310,7 @@ function openExternal(folder, filename) {
   });
 }
 
-function Pile({ files, version, folder, cfg, gen, t, onDragStart, onDragOver, dropEdge }) {
+function UilShotGrouped({ files, version, folder, cfg, gen, t, onDragStart, onDragOver, dropEdge }) {
   // First file is "front" of the pile (video preferred - sorted in getPiles).
   const front = files[0];
   const frontPath = `${folder}\\${front.filename}`;
@@ -1347,7 +1354,7 @@ function Pile({ files, version, folder, cfg, gen, t, onDragStart, onDragOver, dr
   );
 }
 
-function Thumb({ file, folder, cfg, gen, t, onDragStart, onDragOver, dropEdge }) {
+function UilShotUngrouped({ file, folder, cfg, gen, t, onDragStart, onDragOver, dropEdge }) {
   const fullPath = `${folder}\\${file.filename}`;
   const src = `${API}/file?path=${encodeURIComponent(fullPath)}&g=${gen || 0}`;
   const cls = ['thumb'];

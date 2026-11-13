@@ -21,11 +21,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Don't show again",
     btnNewsOpenLink:                        "Learn more",
     tipNewsDismiss:                         "Close",
+    tipNewsShow:                            "News",
     lblStgGeneralNews:                      "Show news from yaiol",
     btnNewsClose:                           "Close",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Open settings",
+    tipHdrSettings:                         "Settings",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimize",
+    tipWinMaximize:                         "Maximize",
+    tipWinRestore:                          "Restore",
+    tipWinClose:                            "Close",
+
     tipHdrHelp:                             "Help",
     btnHdrRefresh:                          "Refresh",
     tipHdrRefresh:                          "Re-scan folder",
@@ -54,7 +62,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Light",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "sequence and renumber video shot files via drag-and-drop.",
+    msgStgAboutDesc:                        "Reorder your video shots by dragging, and the app renumbers every file on disk to match.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Chapter",
@@ -123,11 +131,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Ne plus afficher",
     btnNewsOpenLink:                        "En savoir plus",
     tipNewsDismiss:                         "Fermer",
+    tipNewsShow:                            "Actualités",
     lblStgGeneralNews:                      "Afficher les actualités de yaiol",
     btnNewsClose:                           "Fermer",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Ouvrir les paramètres",
+    tipHdrSettings:                         "Paramètres",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimiser",
+    tipWinMaximize:                         "Agrandir",
+    tipWinRestore:                          "Restaurer",
+    tipWinClose:                            "Fermer",
+
     tipHdrHelp:                             "Aide",
     btnHdrRefresh:                          "Actualiser",
     tipHdrRefresh:                          "Réanalyser le dossier",
@@ -156,7 +172,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Clair",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "Séquencez et renumérotez les fichiers de séquences vidéo par glisser-déposer.",
+    msgStgAboutDesc:                        "Réorganisez vos prises vidéo par glisser-déposer, et l'application renumérote chaque fichier sur le disque en conséquence.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Chapitre",
@@ -224,11 +240,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Nicht mehr anzeigen",
     btnNewsOpenLink:                        "Mehr erfahren",
     tipNewsDismiss:                         "Schließen",
+    tipNewsShow:                            "Nachrichten",
     lblStgGeneralNews:                      "Nachrichten von yaiol anzeigen",
     btnNewsClose:                           "Schließen",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Einstellungen öffnen",
+    tipHdrSettings:                         "Einstellungen",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimieren",
+    tipWinMaximize:                         "Maximieren",
+    tipWinRestore:                          "Wiederherstellen",
+    tipWinClose:                            "Schließen",
+
     tipHdrHelp:                             "Hilfe",
     btnHdrRefresh:                          "Aktualisieren",
     tipHdrRefresh:                          "Ordner neu scannen",
@@ -257,7 +281,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Hell",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "Video-Shot-Dateien per Drag-and-drop sequenzieren und neu nummerieren.",
+    msgStgAboutDesc:                        "Ordnen Sie Ihre Videoaufnahmen per Drag & Drop neu an, und die App nummeriert jede Datei auf der Festplatte entsprechend neu.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Kapitel",
@@ -325,11 +349,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "No volver a mostrar",
     btnNewsOpenLink:                        "Más información",
     tipNewsDismiss:                         "Cerrar",
+    tipNewsShow:                            "Noticias",
     lblStgGeneralNews:                      "Mostrar noticias de yaiol",
     btnNewsClose:                           "Cerrar",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Abrir configuración",
+    tipHdrSettings:                         "Ajustes",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimizar",
+    tipWinMaximize:                         "Maximizar",
+    tipWinRestore:                          "Restaurar",
+    tipWinClose:                            "Cerrar",
+
     tipHdrHelp:                             "Ayuda",
     btnHdrRefresh:                          "Actualizar",
     tipHdrRefresh:                          "Volver a escanear carpeta",
@@ -358,7 +390,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Claro",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "Secuencia y renumeración de archivos de tomas de vídeo mediante arrastrar y soltar.",
+    msgStgAboutDesc:                        "Reordene sus tomas de video arrastrando, y la aplicación renumerará cada archivo en el disco para que coincida.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Capítulo",
@@ -426,11 +458,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Não mostrar novamente",
     btnNewsOpenLink:                        "Saiba mais",
     tipNewsDismiss:                         "Fechar",
+    tipNewsShow:                            "Notícias",
     lblStgGeneralNews:                      "Mostrar notícias de yaiol",
     btnNewsClose:                           "Fechar",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Abrir configurações",
+    tipHdrSettings:                         "Configurações",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimizar",
+    tipWinMaximize:                         "Maximizar",
+    tipWinRestore:                          "Restaurar",
+    tipWinClose:                            "Fechar",
+
     tipHdrHelp:                             "Ajuda",
     btnHdrRefresh:                          "Atualizar",
     tipHdrRefresh:                          "Reanalisar pasta",
@@ -459,7 +499,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Claro",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "Sequencie e renumerar arquivos de vídeo via arrastar e soltar.",
+    msgStgAboutDesc:                        "Reordene suas tomadas de vídeo arrastando, e o aplicativo renumerará cada arquivo no disco para corresponder.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Capítulo",
@@ -527,11 +567,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Não mostrar novamente",
     btnNewsOpenLink:                        "Saber mais",
     tipNewsDismiss:                         "Fechar",
+    tipNewsShow:                            "Notícias",
     lblStgGeneralNews:                      "Mostrar notícias de yaiol",
     btnNewsClose:                           "Fechar",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Abrir definições",
+    tipHdrSettings:                         "Definições",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimizar",
+    tipWinMaximize:                         "Maximizar",
+    tipWinRestore:                          "Restaurar",
+    tipWinClose:                            "Fechar",
+
     tipHdrHelp:                             "Ajuda",
     btnHdrRefresh:                          "Atualizar",
     tipHdrRefresh:                          "Reanalisar pasta",
@@ -560,7 +608,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Claro",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "Sequencie e renumerar ficheiros de vídeo através de arrastar e soltar.",
+    msgStgAboutDesc:                        "Reordene as suas tomadas de vídeo arrastando, e a aplicação renumerará cada ficheiro no disco para corresponder.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Capítulo",
@@ -628,11 +676,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Non mostrare più",
     btnNewsOpenLink:                        "Scopri di più",
     tipNewsDismiss:                         "Chiudi",
+    tipNewsShow:                            "Notizie",
     lblStgGeneralNews:                      "Mostra notizie da yaiol",
     btnNewsClose:                           "Chiudi",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Apri impostazioni",
+    tipHdrSettings:                         "Impostazioni",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Riduci a icona",
+    tipWinMaximize:                         "Ingrandisci",
+    tipWinRestore:                          "Ripristina",
+    tipWinClose:                            "Chiudi",
+
     tipHdrHelp:                             "Aiuto",
     btnHdrRefresh:                          "Aggiorna",
     tipHdrRefresh:                          "Riscansiona cartella",
@@ -661,7 +717,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Chiaro",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "Sequenzia e rinumera i file di riprese video tramite trascinamento.",
+    msgStgAboutDesc:                        "Riordina le tue riprese video trascinandole, e l'app rinumererà ogni file su disco di conseguenza.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Capitolo",
@@ -729,11 +785,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Niet meer tonen",
     btnNewsOpenLink:                        "Meer informatie",
     tipNewsDismiss:                         "Sluiten",
+    tipNewsShow:                            "Nieuws",
     lblStgGeneralNews:                      "Nieuws van yaiol tonen",
     btnNewsClose:                           "Sluiten",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Instellingen openen",
+    tipHdrSettings:                         "Instellingen",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimaliseren",
+    tipWinMaximize:                         "Maximaliseren",
+    tipWinRestore:                          "Herstellen",
+    tipWinClose:                            "Sluiten",
+
     tipHdrHelp:                             "Hulp",
     btnHdrRefresh:                          "Vernieuwen",
     tipHdrRefresh:                          "Map opnieuw scannen",
@@ -762,7 +826,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Licht",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "Video-opnamebestanden sequencen en hernummeren via slepen en neerzetten.",
+    msgStgAboutDesc:                        "Herschik uw video-opnamen door te slepen, en de app hernummert elk bestand op schijf om overeen te komen.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Hoofdstuk",
@@ -830,11 +894,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Больше не показывать",
     btnNewsOpenLink:                        "Узнать больше",
     tipNewsDismiss:                         "Закрыть",
+    tipNewsShow:                            "Новости",
     lblStgGeneralNews:                      "Показывать новости от yaiol",
     btnNewsClose:                           "Закрыть",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Открыть настройки",
+    tipHdrSettings:                         "Настройки",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Свернуть",
+    tipWinMaximize:                         "Развернуть",
+    tipWinRestore:                          "Восстановить",
+    tipWinClose:                            "Закрыть",
+
     tipHdrHelp:                             "Помощь",
     btnHdrRefresh:                          "Обновить",
     tipHdrRefresh:                          "Повторное сканирование папки",
@@ -863,7 +935,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Светлый",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "Упорядочивайте и перенумеровывайте файлы видеозаписей перетаскиванием.",
+    msgStgAboutDesc:                        "Изменяйте порядок видеокадров перетаскиванием, и приложение перенумерует каждый файл на диске соответствующим образом.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Глава",
@@ -931,11 +1003,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Більше не показувати",
     btnNewsOpenLink:                        "Дізнатися більше",
     tipNewsDismiss:                         "Закрити",
+    tipNewsShow:                            "Новини",
     lblStgGeneralNews:                      "Показувати новини від yaiol",
     btnNewsClose:                           "Закрити",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Відкрити налаштування",
+    tipHdrSettings:                         "Налаштування",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Згорнути",
+    tipWinMaximize:                         "Розгорнути",
+    tipWinRestore:                          "Відновити",
+    tipWinClose:                            "Закрити",
+
     tipHdrHelp:                             "Довідка",
     btnHdrRefresh:                          "Оновити",
     tipHdrRefresh:                          "Повторно сканувати теку",
@@ -964,7 +1044,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Світлий",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "Упорядковуйте та перенумеровуйте файли відеозаписів перетягуванням.",
+    msgStgAboutDesc:                        "Змінюйте порядок відеокадрів перетягуванням, і програма перенумерує кожен файл на диску відповідно.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Розділ",
@@ -1032,11 +1112,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Nie pokazuj ponownie",
     btnNewsOpenLink:                        "Dowiedz się więcej",
     tipNewsDismiss:                         "Zamknij",
+    tipNewsShow:                            "Wiadomości",
     lblStgGeneralNews:                      "Pokaż wiadomości z yaiol",
     btnNewsClose:                           "Zamknij",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Otwórz ustawienia",
+    tipHdrSettings:                         "Ustawienia",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimalizuj",
+    tipWinMaximize:                         "Maksymalizuj",
+    tipWinRestore:                          "Przywróć",
+    tipWinClose:                            "Zamknij",
+
     tipHdrHelp:                             "Pomoc",
     btnHdrRefresh:                          "Odśwież",
     tipHdrRefresh:                          "Ponownie skanuj folder",
@@ -1065,7 +1153,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Jasny",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "Sekwencjonuj i zmieniaj numery plików ujęć wideo metodą „przeciągnij i upuść”.",
+    msgStgAboutDesc:                        "Zmieniaj kolejność ujęć wideo, przeciągając je, a aplikacja zmieni numerację każdego pliku na dysku, aby pasowała.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Rozdział",
@@ -1133,11 +1221,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Nu mai afișa",
     btnNewsOpenLink:                        "Află mai multe",
     tipNewsDismiss:                         "Închide",
+    tipNewsShow:                            "Știri",
     lblStgGeneralNews:                      "Afișează știri de la yaiol",
     btnNewsClose:                           "Închide",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Deschide setările",
+    tipHdrSettings:                         "Setări",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimizare",
+    tipWinMaximize:                         "Maximizare",
+    tipWinRestore:                          "Restaurare",
+    tipWinClose:                            "Închidere",
+
     tipHdrHelp:                             "Ajutor",
     btnHdrRefresh:                          "Reîmprospătare",
     tipHdrRefresh:                          "Rescanează folderul",
@@ -1166,7 +1262,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Luminos",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "Secvențiați și renumerați fișierele video prin glisare și fixare.",
+    msgStgAboutDesc:                        "Reordonați-vă cadrele video prin tragere, iar aplicația va renumerota fiecare fișier de pe disc pentru a se potrivi.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Capitol",
@@ -1234,11 +1330,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Visa inte igen",
     btnNewsOpenLink:                        "Läs mer",
     tipNewsDismiss:                         "Stäng",
+    tipNewsShow:                            "Nyheter",
     lblStgGeneralNews:                      "Visa nyheter från yaiol",
     btnNewsClose:                           "Stäng",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Öppna inställningar",
+    tipHdrSettings:                         "Inställningar",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimera",
+    tipWinMaximize:                         "Maximera",
+    tipWinRestore:                          "Återställ",
+    tipWinClose:                            "Stäng",
+
     tipHdrHelp:                             "Hjälp",
     btnHdrRefresh:                          "Uppdatera",
     tipHdrRefresh:                          "Skanna om mapp",
@@ -1267,7 +1371,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Ljus",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "Ordna och numrera om videoklippfiler via dra och släpp.",
+    msgStgAboutDesc:                        "Ändra ordning på dina videoklipp genom att dra, så numrerar appen om varje fil på disken för att matcha.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Kapitel",
@@ -1335,11 +1439,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Ikke vis igjen",
     btnNewsOpenLink:                        "Les mer",
     tipNewsDismiss:                         "Lukk",
+    tipNewsShow:                            "Nyheter",
     lblStgGeneralNews:                      "Vis nyheter fra yaiol",
     btnNewsClose:                           "Lukk",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Åpne innstillinger",
+    tipHdrSettings:                         "Innstillinger",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimer",
+    tipWinMaximize:                         "Maksimer",
+    tipWinRestore:                          "Gjenopprett",
+    tipWinClose:                            "Lukk",
+
     tipHdrHelp:                             "Hjelp",
     btnHdrRefresh:                          "Oppdater",
     tipHdrRefresh:                          "Skann mappe på nytt",
@@ -1368,7 +1480,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Lys",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "Sekvenser og omnummerer videofilfiler via dra-og-slipp.",
+    msgStgAboutDesc:                        "Endre rekkefølgen på videoklippene dine ved å dra, og appen nummererer om hver fil på disken for å matche.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Kapittel",
@@ -1436,11 +1548,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Bir daha gösterme",
     btnNewsOpenLink:                        "Daha fazla bilgi edin",
     tipNewsDismiss:                         "Kapat",
+    tipNewsShow:                            "Haberler",
     lblStgGeneralNews:                      "yaiol'dan haberleri göster",
     btnNewsClose:                           "Kapat",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Ayarları aç",
+    tipHdrSettings:                         "Ayarlar",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Küçült",
+    tipWinMaximize:                         "Ekranı kapla",
+    tipWinRestore:                          "Geri yükle",
+    tipWinClose:                            "Kapat",
+
     tipHdrHelp:                             "Yardım",
     btnHdrRefresh:                          "Yenile",
     tipHdrRefresh:                          "Klasörü yeniden tara",
@@ -1469,7 +1589,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Açık",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "Video çekim dosyalarını sürükle ve bırak ile sıralayın ve yeniden numaralandırın.",
+    msgStgAboutDesc:                        "Video çekimlerinizi sürükleyerek yeniden sıralayın; uygulama, diskteki her dosyayı buna göre yeniden numaralandırır.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Bölüm",
@@ -1537,11 +1657,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Ne prikazuj ponovno",
     btnNewsOpenLink:                        "Saznajte više",
     tipNewsDismiss:                         "Zatvori",
+    tipNewsShow:                            "Vijesti",
     lblStgGeneralNews:                      "Prikaži vijesti iz yaiol",
     btnNewsClose:                           "Zatvori",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Otvori postavke",
+    tipHdrSettings:                         "Postavke",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimiziraj",
+    tipWinMaximize:                         "Maksimiziraj",
+    tipWinRestore:                          "Vrati",
+    tipWinClose:                            "Zatvori",
+
     tipHdrHelp:                             "Pomoć",
     btnHdrRefresh:                          "Osvježi",
     tipHdrRefresh:                          "Ponovno skeniraj mapu",
@@ -1570,7 +1698,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Svijetlo",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "Sekvencirajte i prenumerirajte datoteke video snimaka povlačenjem i ispuštanjem.",
+    msgStgAboutDesc:                        "Preuredite svoje video snimke povlačenjem, a aplikacija će prenumerirati svaku datoteku na disku da se podudara.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Poglavlje",
@@ -1638,11 +1766,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Να μην εμφανιστεί ξανά",
     btnNewsOpenLink:                        "Μάθετε περισσότερα",
     tipNewsDismiss:                         "Κλείσιμο",
+    tipNewsShow:                            "Ειδήσεις",
     lblStgGeneralNews:                      "Εμφάνιση ειδήσεων από το yaiol",
     btnNewsClose:                           "Κλείσιμο",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Άνοιγμα ρυθμίσεων",
+    tipHdrSettings:                         "Ρυθμίσεις",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Ελαχιστοποίηση",
+    tipWinMaximize:                         "Μεγιστοποίηση",
+    tipWinRestore:                          "Επαναφορά",
+    tipWinClose:                            "Κλείσιμο",
+
     tipHdrHelp:                             "Βοήθεια",
     btnHdrRefresh:                          "Ανανέωση",
     tipHdrRefresh:                          "Επανάληψη σάρωσης φακέλου",
@@ -1671,7 +1807,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Φωτεινό",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "Ακολουθήστε και αναριθμήστε αρχεία βίντεο μέσω μεταφοράς και απόθεσης.",
+    msgStgAboutDesc:                        "Αναδιατάξτε τις λήψεις βίντεο με μεταφορά, και η εφαρμογή θα αναριθμήσει κάθε αρχείο στο δίσκο για να ταιριάζει.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Κεφάλαιο",
@@ -1739,11 +1875,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "אל תציג שוב",
     btnNewsOpenLink:                        "למידע נוסף",
     tipNewsDismiss:                         "סגור",
+    tipNewsShow:                            "חדשות",
     lblStgGeneralNews:                      "הצג חדשות מ-yaiol",
     btnNewsClose:                           "סגור",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "פתח הגדרות",
+    tipHdrSettings:                         "הגדרות",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "מזער",
+    tipWinMaximize:                         "הגדל",
+    tipWinRestore:                          "שחזר",
+    tipWinClose:                            "סגור",
+
     tipHdrHelp:                             "עזרה",
     btnHdrRefresh:                          "רענן",
     tipHdrRefresh:                          "סרוק תיקייה מחדש",
@@ -1772,7 +1916,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "בהיר",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "סדר מחדש ומספר מחדש קבצי צילום וידאו באמצעות גרירה ושחרור.",
+    msgStgAboutDesc:                        "סדר מחדש את צילומי הווידאו שלך בגרירה, והאפליקציה תמספר מחדש כל קובץ בדיסק בהתאם.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "פרק",
@@ -1840,11 +1984,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "عدم الإظهار مرة أخرى",
     btnNewsOpenLink:                        "تعرّف على المزيد",
     tipNewsDismiss:                         "إغلاق",
+    tipNewsShow:                            "الأخبار",
     lblStgGeneralNews:                      "إظهار الأخبار من yaiol",
     btnNewsClose:                           "إغلاق",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "فتح الإعدادات",
+    tipHdrSettings:                         "الإعدادات",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "تصغير",
+    tipWinMaximize:                         "تكبير",
+    tipWinRestore:                          "استعادة",
+    tipWinClose:                            "إغلاق",
+
     tipHdrHelp:                             "مساعدة",
     btnHdrRefresh:                          "تحديث",
     tipHdrRefresh:                          "إعادة فحص المجلد",
@@ -1873,7 +2025,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "فاتح",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "ترتيب وإعادة ترقيم ملفات لقطات الفيديو بالسحب والإفلات.",
+    msgStgAboutDesc:                        "أعد ترتيب لقطات الفيديو عن طريق السحب، وسيقوم التطبيق بإعادة ترقيم كل ملف على القرص للمطابقة.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "فصل",
@@ -1941,11 +2093,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "دیگر نمایش نده",
     btnNewsOpenLink:                        "بیشتر بدانید",
     tipNewsDismiss:                         "بستن",
+    tipNewsShow:                            "اخبار",
     lblStgGeneralNews:                      "نمایش اخبار از yaiol",
     btnNewsClose:                           "بستن",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "باز کردن تنظیمات",
+    tipHdrSettings:                         "تنظیمات",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "کوچک‌نمایی",
+    tipWinMaximize:                         "بزرگ‌نمایی",
+    tipWinRestore:                          "بازیابی",
+    tipWinClose:                            "بستن",
+
     tipHdrHelp:                             "راهنما",
     btnHdrRefresh:                          "تازه‌سازی",
     tipHdrRefresh:                          "اسکن مجدد پوشه",
@@ -1974,7 +2134,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "روشن",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "ترتیب و شماره‌گذاری مجدد فایل‌های ویدیویی با کشیدن و رها کردن.",
+    msgStgAboutDesc:                        "نماهای ویدیویی خود را با کشیدن مرتب کنید، و برنامه هر فایل را روی دیسک مجدداً شماره‌گذاری می‌کند تا مطابقت داشته باشد.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "فصل",
@@ -2042,11 +2202,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "不再显示",
     btnNewsOpenLink:                        "了解更多",
     tipNewsDismiss:                         "关闭",
+    tipNewsShow:                            "新闻",
     lblStgGeneralNews:                      "显示来自 yaiol 的新闻",
     btnNewsClose:                           "关闭",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "打开设置",
+    tipHdrSettings:                         "设置",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "最小化",
+    tipWinMaximize:                         "最大化",
+    tipWinRestore:                          "还原",
+    tipWinClose:                            "关闭",
+
     tipHdrHelp:                             "帮助",
     btnHdrRefresh:                          "刷新",
     tipHdrRefresh:                          "重新扫描文件夹",
@@ -2075,7 +2243,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "浅色",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "通过拖放对视频拍摄文件进行排序和重新编号。",
+    msgStgAboutDesc:                        "拖动以重新排序视频片段，应用将自动重新编号磁盘上的每个文件以匹配。",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "章节",
@@ -2143,11 +2311,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "不再顯示",
     btnNewsOpenLink:                        "了解更多",
     tipNewsDismiss:                         "關閉",
+    tipNewsShow:                            "新聞",
     lblStgGeneralNews:                      "顯示來自 yaiol 的新聞",
     btnNewsClose:                           "關閉",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "開啟設定",
+    tipHdrSettings:                         "設定",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "最小化",
+    tipWinMaximize:                         "最大化",
+    tipWinRestore:                          "還原",
+    tipWinClose:                            "關閉",
+
     tipHdrHelp:                             "說明",
     btnHdrRefresh:                          "重新整理",
     tipHdrRefresh:                          "重新掃描資料夾",
@@ -2176,7 +2352,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "淺色",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "透過拖放對影片拍攝檔案進行排序和重新編號。",
+    msgStgAboutDesc:                        "拖曳以重新排序視訊片段，應用程式將自動重新編號磁碟上的每個檔案以符合。",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "章節",
@@ -2244,11 +2420,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "今後表示しない",
     btnNewsOpenLink:                        "詳細を見る",
     tipNewsDismiss:                         "閉じる",
+    tipNewsShow:                            "ニュース",
     lblStgGeneralNews:                      "yaiol からのニュースを表示",
     btnNewsClose:                           "閉じる",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "設定を開く",
+    tipHdrSettings:                         "設定",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "最小化",
+    tipWinMaximize:                         "最大化",
+    tipWinRestore:                          "元に戻す",
+    tipWinClose:                            "閉じる",
+
     tipHdrHelp:                             "ヘルプ",
     btnHdrRefresh:                          "更新",
     tipHdrRefresh:                          "フォルダーを再スキャン",
@@ -2277,7 +2461,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "ライト",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "ドラッグ＆ドロップでビデオショットファイルをシーケンス化し、番号を振り直します。",
+    msgStgAboutDesc:                        "ビデオショットをドラッグして並べ替えると、アプリはディスク上のすべてのファイルに一致するように番号を振り直します。",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "チャプター",
@@ -2345,11 +2529,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "다시 표시 안 함",
     btnNewsOpenLink:                        "자세히 알아보기",
     tipNewsDismiss:                         "닫기",
+    tipNewsShow:                            "뉴스",
     lblStgGeneralNews:                      "yaiol 뉴스 표시",
     btnNewsClose:                           "닫기",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "설정 열기",
+    tipHdrSettings:                         "설정",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "최소화",
+    tipWinMaximize:                         "최대화",
+    tipWinRestore:                          "이전 크기로",
+    tipWinClose:                            "닫기",
+
     tipHdrHelp:                             "도움말",
     btnHdrRefresh:                          "새로 고침",
     tipHdrRefresh:                          "폴더 다시 스캔",
@@ -2378,7 +2570,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "밝게",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "드래그 앤 드롭으로 비디오 촬영 파일의 순서를 지정하고 번호를 다시 매깁니다.",
+    msgStgAboutDesc:                        "비디오 샷을 드래그하여 순서를 변경하면 앱이 디스크의 모든 파일 번호를 일치하도록 다시 지정합니다.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "챕터",
@@ -2446,11 +2638,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Không hiển thị lại",
     btnNewsOpenLink:                        "Tìm hiểu thêm",
     tipNewsDismiss:                         "Đóng",
+    tipNewsShow:                            "Tin tức",
     lblStgGeneralNews:                      "Hiển thị tin tức từ yaiol",
     btnNewsClose:                           "Đóng",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Mở cài đặt",
+    tipHdrSettings:                         "Cài đặt",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Thu nhỏ",
+    tipWinMaximize:                         "Phóng to",
+    tipWinRestore:                          "Khôi phục",
+    tipWinClose:                            "Đóng",
+
     tipHdrHelp:                             "Trợ giúp",
     btnHdrRefresh:                          "Làm mới",
     tipHdrRefresh:                          "Quét lại thư mục",
@@ -2479,7 +2679,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Sáng",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "Sắp xếp và đánh số lại các tệp quay video bằng cách kéo và thả.",
+    msgStgAboutDesc:                        "Sắp xếp lại các cảnh quay video bằng cách kéo, và ứng dụng sẽ đánh số lại mọi tệp trên đĩa để khớp.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Chương",
@@ -2547,11 +2747,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "ไม่ต้องแสดงอีก",
     btnNewsOpenLink:                        "เรียนรู้เพิ่มเติม",
     tipNewsDismiss:                         "ปิด",
+    tipNewsShow:                            "ข่าว",
     lblStgGeneralNews:                      "แสดงข่าวสารจาก yaiol",
     btnNewsClose:                           "ปิด",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "เปิดการตั้งค่า",
+    tipHdrSettings:                         "การตั้งค่า",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "ย่อ",
+    tipWinMaximize:                         "ขยาย",
+    tipWinRestore:                          "คืนค่า",
+    tipWinClose:                            "ปิด",
+
     tipHdrHelp:                             "ช่วยเหลือ",
     btnHdrRefresh:                          "รีเฟรช",
     tipHdrRefresh:                          "สแกนโฟลเดอร์อีกครั้ง",
@@ -2580,7 +2788,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "สว่าง",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "จัดลำดับและเปลี่ยนหมายเลขไฟล์วิดีโอด้วยการลากและวาง",
+    msgStgAboutDesc:                        "จัดลำดับช็อตวิดีโอใหม่โดยการลาก และแอปจะเปลี่ยนหมายเลขไฟล์ทั้งหมดบนดิสก์ให้ตรงกัน",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "บท",
@@ -2648,11 +2856,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Jangan tampilkan lagi",
     btnNewsOpenLink:                        "Pelajari lebih lanjut",
     tipNewsDismiss:                         "Tutup",
+    tipNewsShow:                            "Berita",
     lblStgGeneralNews:                      "Tampilkan berita dari yaiol",
     btnNewsClose:                           "Tutup",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Buka pengaturan",
+    tipHdrSettings:                         "Pengaturan",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimalkan",
+    tipWinMaximize:                         "Maksimalkan",
+    tipWinRestore:                          "Pulihkan",
+    tipWinClose:                            "Tutup",
+
     tipHdrHelp:                             "Bantuan",
     btnHdrRefresh:                          "Segarkan",
     tipHdrRefresh:                          "Pindai ulang folder",
@@ -2681,7 +2897,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Terang",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "Urutkan dan beri nomor ulang file rekaman video melalui seret dan lepas.",
+    msgStgAboutDesc:                        "Susun ulang bidikan video Anda dengan menyeret, dan aplikasi akan menomori ulang setiap file di disk agar sesuai.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Bab",
@@ -2749,11 +2965,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "No tornar a mostrar",
     btnNewsOpenLink:                        "Més informació",
     tipNewsDismiss:                         "Tancar",
+    tipNewsShow:                            "Notícies",
     lblStgGeneralNews:                      "Mostrar notícies de yaiol",
     btnNewsClose:                           "Tancar",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Obre la configuració",
+    tipHdrSettings:                         "Configuració",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimitzar",
+    tipWinMaximize:                         "Maximitzar",
+    tipWinRestore:                          "Restaurar",
+    tipWinClose:                            "Tancar",
+
     tipHdrHelp:                             "Ajuda",
     btnHdrRefresh:                          "Actualitzar",
     tipHdrRefresh:                          "Torna a escanejar la carpeta",
@@ -2782,7 +3006,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Clar",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "Ordeneu i renumereu els fitxers de vídeo mitjançant arrossegar i deixar anar.",
+    msgStgAboutDesc:                        "Reordeneu les vostres preses de vídeo arrossegant, i l'aplicació renumerarà cada fitxer al disc perquè coincideixi.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Capítol",
@@ -2850,11 +3074,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Nezobrazovat znovu",
     btnNewsOpenLink:                        "Další informace",
     tipNewsDismiss:                         "Zavřít",
+    tipNewsShow:                            "Zprávy",
     lblStgGeneralNews:                      "Zobrazovat zprávy z yaiol",
     btnNewsClose:                           "Zavřít",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Otevřít nastavení",
+    tipHdrSettings:                         "Nastavení",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimalizovat",
+    tipWinMaximize:                         "Maximalizovat",
+    tipWinRestore:                          "Obnovit",
+    tipWinClose:                            "Zavřít",
+
     tipHdrHelp:                             "Nápověda",
     btnHdrRefresh:                          "Obnovit",
     tipHdrRefresh:                          "Znovu prohledat složku",
@@ -2883,7 +3115,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Světlý",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "Sekvenujte a přečíslujte soubory videozáznamů přetažením.",
+    msgStgAboutDesc:                        "Změňte pořadí videozáběrů přetažením a aplikace přečísluje každý soubor na disku tak, aby odpovídal.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Kapitola",
@@ -2951,11 +3183,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Vis ikke igen",
     btnNewsOpenLink:                        "Læs mere",
     tipNewsDismiss:                         "Luk",
+    tipNewsShow:                            "Nyheder",
     lblStgGeneralNews:                      "Vis nyheder fra yaiol",
     btnNewsClose:                           "Luk",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Åbn indstillinger",
+    tipHdrSettings:                         "Indstillinger",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimer",
+    tipWinMaximize:                         "Maksimer",
+    tipWinRestore:                          "Gendan",
+    tipWinClose:                            "Luk",
+
     tipHdrHelp:                             "Hjælp",
     btnHdrRefresh:                          "Opdater",
     tipHdrRefresh:                          "Genskan mappe",
@@ -2984,7 +3224,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Lys",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "Sekvenser og omnummerer videoklipfiler via træk og slip.",
+    msgStgAboutDesc:                        "Omarranger dine videooptagelser ved at trække, og appen omnummererer hver fil på disken, så den matcher.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Kapitel",
@@ -3052,11 +3292,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Älä näytä uudelleen",
     btnNewsOpenLink:                        "Lue lisää",
     tipNewsDismiss:                         "Sulje",
+    tipNewsShow:                            "Uutiset",
     lblStgGeneralNews:                      "Näytä uutiset yaiolista",
     btnNewsClose:                           "Sulje",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Avaa asetukset",
+    tipHdrSettings:                         "Asetukset",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Pienennä",
+    tipWinMaximize:                         "Suurenna",
+    tipWinRestore:                          "Palauta",
+    tipWinClose:                            "Sulje",
+
     tipHdrHelp:                             "Ohje",
     btnHdrRefresh:                          "Päivitä",
     tipHdrRefresh:                          "Tarkista kansio uudelleen",
@@ -3085,7 +3333,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Vaalea",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "Järjestä ja numeroi videokuvatiedostot uudelleen vetämällä ja pudottamalla.",
+    msgStgAboutDesc:                        "Järjestä videokuvasi uudelleen vetämällä, ja sovellus numeroi uudelleen jokaisen tiedoston levyllä vastaamaan.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Luku",
@@ -3153,11 +3401,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Jangan tunjuk lagi",
     btnNewsOpenLink:                        "Ketahui lebih lanjut",
     tipNewsDismiss:                         "Tutup",
+    tipNewsShow:                            "Berita",
     lblStgGeneralNews:                      "Tunjukkan berita dari yaiol",
     btnNewsClose:                           "Tutup",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Buka tetapan",
+    tipHdrSettings:                         "Tetapan",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimumkan",
+    tipWinMaximize:                         "Maksimumkan",
+    tipWinRestore:                          "Pulihkan",
+    tipWinClose:                            "Tutup",
+
     tipHdrHelp:                             "Bantuan",
     btnHdrRefresh:                          "Segarkan",
     tipHdrRefresh:                          "Imbas semula folder",
@@ -3186,7 +3442,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Cerah",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "Susun dan nombor semula fail rakaman video melalui seret dan lepas.",
+    msgStgAboutDesc:                        "Susun semula rakaman video anda dengan menyeret, dan apl akan menomborkan semula setiap fail pada cakera agar sepadan.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Bab",
@@ -3254,11 +3510,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Այլևս չցուցադրել",
     btnNewsOpenLink:                        "Իմանալ ավելին",
     tipNewsDismiss:                         "Փակել",
+    tipNewsShow:                            "Նորություններ",
     lblStgGeneralNews:                      "Ցուցադրել նորություններ yaiol-ից",
     btnNewsClose:                           "Փակել",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Բացել կարգավորումները",
+    tipHdrSettings:                         "Կարգավորումներ",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Նվազեցնել",
+    tipWinMaximize:                         "Առավելագույնի հասցնել",
+    tipWinRestore:                          "Վերականգնել",
+    tipWinClose:                            "Փակել",
+
     tipHdrHelp:                             "Օգնություն",
     btnHdrRefresh:                          "Թարմացնել",
     tipHdrRefresh:                          "Վերստուգել թղթապանակը",
@@ -3287,7 +3551,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Բաց",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "Տեսանյութերի ֆայլերը հաջորդականացնել և վերահամարակալել քաշել-թողնել մեթոդով։",
+    msgStgAboutDesc:                        "Վերադասավորեք ձեր տեսանյութերը քաշելով, և հավելվածը կվերահամարակալի սկավառակի յուրաքանչյուր ֆայլ՝ համապատասխանեցնելու համար։",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Գլուխ",
@@ -3355,11 +3619,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Не показвай отново",
     btnNewsOpenLink:                        "Научете повече",
     tipNewsDismiss:                         "Затвори",
+    tipNewsShow:                            "Новини",
     lblStgGeneralNews:                      "Показвай новини от yaiol",
     btnNewsClose:                           "Затвори",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Отвори настройки",
+    tipHdrSettings:                         "Настройки",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Минимизиране",
+    tipWinMaximize:                         "Максимизиране",
+    tipWinRestore:                          "Възстановяване",
+    tipWinClose:                            "Затваряне",
+
     tipHdrHelp:                             "Помощ",
     btnHdrRefresh:                          "Обнови",
     tipHdrRefresh:                          "Повторно сканиране на папка",
@@ -3388,7 +3660,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Светъл",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "Подреждайте и преномерирайте видео файлове чрез влачене и пускане.",
+    msgStgAboutDesc:                        "Пренаредете видеокадрите си чрез плъзгане, а приложението ще преномерира всеки файл на диска, за да съответства.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Глава",
@@ -3456,11 +3728,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Non mostrar de novo",
     btnNewsOpenLink:                        "Máis información",
     tipNewsDismiss:                         "Pechar",
+    tipNewsShow:                            "Novas",
     lblStgGeneralNews:                      "Mostrar noticias de yaiol",
     btnNewsClose:                           "Pechar",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Abrir configuración",
+    tipHdrSettings:                         "Configuración",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimizar",
+    tipWinMaximize:                         "Maximizar",
+    tipWinRestore:                          "Restaurar",
+    tipWinClose:                            "Pechar",
+
     tipHdrHelp:                             "Axuda",
     btnHdrRefresh:                          "Actualizar",
     tipHdrRefresh:                          "Volver escanear cartafol",
@@ -3489,7 +3769,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Claro",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "Secuencia e renumeración de ficheiros de tomas de vídeo mediante arrastrar e soltar.",
+    msgStgAboutDesc:                        "Reordene as súas tomas de vídeo arrastrando, e a aplicación renumerará cada ficheiro no disco para que coincida.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Capítulo",
@@ -3557,11 +3837,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Ne mutasd újra",
     btnNewsOpenLink:                        "Tudjon meg többet",
     tipNewsDismiss:                         "Bezárás",
+    tipNewsShow:                            "Hírek",
     lblStgGeneralNews:                      "Hírek megjelenítése a yaiol-tól",
     btnNewsClose:                           "Bezárás",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Beállítások megnyitása",
+    tipHdrSettings:                         "Beállítások",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Kis méretre",
+    tipWinMaximize:                         "Teljes méretre",
+    tipWinRestore:                          "Visszaállítás",
+    tipWinClose:                            "Bezárás",
+
     tipHdrHelp:                             "Súgó",
     btnHdrRefresh:                          "Frissítés",
     tipHdrRefresh:                          "Mappa újbóli vizsgálata",
@@ -3590,7 +3878,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Világos",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "Videofájlok sorrendjének és számozásának módosítása húzással.",
+    msgStgAboutDesc:                        "Rendezze át videófelvételeit húzással, és az alkalmazás újra számozza a lemezen lévő összes fájlt, hogy megfeleljen.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Fejezet",
@@ -3658,11 +3946,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Daugiau nerodyti",
     btnNewsOpenLink:                        "Sužinoti daugiau",
     tipNewsDismiss:                         "Uždaryti",
+    tipNewsShow:                            "Naujienos",
     lblStgGeneralNews:                      "Rodyti naujienas iš yaiol",
     btnNewsClose:                           "Uždaryti",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Atidaryti nustatymus",
+    tipHdrSettings:                         "Nustatymai",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Mažinti",
+    tipWinMaximize:                         "Didinti",
+    tipWinRestore:                          "Atkurti",
+    tipWinClose:                            "Uždaryti",
+
     tipHdrHelp:                             "Pagalba",
     btnHdrRefresh:                          "Atnaujinti",
     tipHdrRefresh:                          "Iš naujo nuskaityti aplanką",
@@ -3691,7 +3987,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Šviesus",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "Išdėstykite ir pernumeruokite vaizdo įrašų failus vilkdami ir numesdami.",
+    msgStgAboutDesc:                        "Pertvarkykite vaizdo įrašus vilkdami, o programa pernumeruos kiekvieną failą diske, kad atitiktų.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Skyrius",
@@ -3759,11 +4055,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Не прикажувај повторно",
     btnNewsOpenLink:                        "Дознајте повеќе",
     tipNewsDismiss:                         "Затвори",
+    tipNewsShow:                            "Вести",
     lblStgGeneralNews:                      "Прикажи вести од yaiol",
     btnNewsClose:                           "Затвори",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Отвори поставки",
+    tipHdrSettings:                         "Поставки",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Минимизирај",
+    tipWinMaximize:                         "Максимизирај",
+    tipWinRestore:                          "Врати",
+    tipWinClose:                            "Затвори",
+
     tipHdrHelp:                             "Помош",
     btnHdrRefresh:                          "Освежи",
     tipHdrRefresh:                          "Повторно скенирај папка",
@@ -3792,7 +4096,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Светло",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "Подредувајте и пренумерирајте видео датотеки со влечење и пуштање.",
+    msgStgAboutDesc:                        "Пренаредете ги вашите видео снимки со влечење, а апликацијата ќе ги пренумерира сите датотеки на дискот за да се совпаѓаат.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Поглавје",
@@ -3860,11 +4164,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Не приказуј поново",
     btnNewsOpenLink:                        "Сазнајте више",
     tipNewsDismiss:                         "Затвори",
+    tipNewsShow:                            "Вести",
     lblStgGeneralNews:                      "Прикажи вести из yaiol",
     btnNewsClose:                           "Затвори",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Отвори подешавања",
+    tipHdrSettings:                         "Подешавања",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Минимизуј",
+    tipWinMaximize:                         "Максимизуј",
+    tipWinRestore:                          "Врати",
+    tipWinClose:                            "Затвори",
+
     tipHdrHelp:                             "Помоћ",
     btnHdrRefresh:                          "Освежи",
     tipHdrRefresh:                          "Поново скенирај фасциклу",
@@ -3893,7 +4205,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Светло",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "Редослед и пренумерација видео фајлова превлачењем и отпуштањем.",
+    msgStgAboutDesc:                        "Преуредите своје видео снимке превлачењем, а апликација ће пренумерисати сваки фајл на диску да се подудара.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Поглавље",
@@ -3961,11 +4273,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Nezobrazovať znova",
     btnNewsOpenLink:                        "Zistiť viac",
     tipNewsDismiss:                         "Zavrieť",
+    tipNewsShow:                            "Správy",
     lblStgGeneralNews:                      "Zobrazovať správy z yaiol",
     btnNewsClose:                           "Zavrieť",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Otvoriť nastavenia",
+    tipHdrSettings:                         "Nastavenia",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Minimalizovať",
+    tipWinMaximize:                         "Maximalizovať",
+    tipWinRestore:                          "Obnoviť",
+    tipWinClose:                            "Zavrieť",
+
     tipHdrHelp:                             "Pomoc",
     btnHdrRefresh:                          "Obnoviť",
     tipHdrRefresh:                          "Znova skenovať priečinok",
@@ -3994,7 +4314,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Svetlý",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "Sekvenujte a prečíslujte súbory videozáznamov potiahnutím a pustením.",
+    msgStgAboutDesc:                        "Zmeňte poradie videozáberov potiahnutím a aplikácia prečísluje každý súbor na disku tak, aby zodpovedal.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Kapitola",
@@ -4062,11 +4382,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Ne prikazuj več",
     btnNewsOpenLink:                        "Več o tem",
     tipNewsDismiss:                         "Zapri",
+    tipNewsShow:                            "Novice",
     lblStgGeneralNews:                      "Prikaži novice iz yaiol",
     btnNewsClose:                           "Zapri",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Odpri nastavitve",
+    tipHdrSettings:                         "Nastavitve",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Pomanjšaj",
+    tipWinMaximize:                         "Povečaj",
+    tipWinRestore:                          "Obnovi",
+    tipWinClose:                            "Zapri",
+
     tipHdrHelp:                             "Pomoč",
     btnHdrRefresh:                          "Osveži",
     tipHdrRefresh:                          "Ponovno skeniraj mapo",
@@ -4095,7 +4423,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Svetlo",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "Zaporedno uredite in preštevilčite datoteke video posnetkov z vlečenjem in spuščanjem.",
+    msgStgAboutDesc:                        "Preuredite svoje video posnetke z vlečenjem, aplikacija pa bo preštevilčila vsako datoteko na disku, da se ujema.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Poglavje",
@@ -4163,11 +4491,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "மீண்டும் காட்டாதே",
     btnNewsOpenLink:                        "மேலும் அறிக",
     tipNewsDismiss:                         "மூடு",
+    tipNewsShow:                            "செய்திகள்",
     lblStgGeneralNews:                      "yaiol இலிருந்து செய்திகளைக் காட்டு",
     btnNewsClose:                           "மூடு",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "அமைப்புகளைத் திற",
+    tipHdrSettings:                         "அமைப்புகள்",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "சுருக்கு",
+    tipWinMaximize:                         "பெரிதாக்கு",
+    tipWinRestore:                          "மீட்டமை",
+    tipWinClose:                            "மூடு",
+
     tipHdrHelp:                             "உதவி",
     btnHdrRefresh:                          "புதுப்பி",
     tipHdrRefresh:                          "கோப்புறையை மீண்டும் ஸ்கேன் செய்",
@@ -4196,7 +4532,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "வெளிச்சம்",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "இழுத்து விடுவதன் மூலம் வீடியோ ஷாட் கோப்புகளை வரிசைப்படுத்தி மறுபெயரிடவும்.",
+    msgStgAboutDesc:                        "உங்கள் வீடியோ ஷாட்களை இழுத்து மறுவரிசைப்படுத்தவும், அதற்கேற்ப பயன்பாடு வட்டில் உள்ள ஒவ்வொரு கோப்பையும் மறுஎண் செய்யும்.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "அத்தியாயம்",
@@ -4264,11 +4600,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "दोबारा न दिखाएँ",
     btnNewsOpenLink:                        "और जानें",
     tipNewsDismiss:                         "बंद करें",
+    tipNewsShow:                            "समाचार",
     lblStgGeneralNews:                      "yaiol से समाचार दिखाएँ",
     btnNewsClose:                           "बंद करें",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "सेटिंग्स खोलें",
+    tipHdrSettings:                         "सेटिंग्स",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "छोटा करें",
+    tipWinMaximize:                         "बड़ा करें",
+    tipWinRestore:                          "पुनर्स्थापित करें",
+    tipWinClose:                            "बंद करें",
+
     tipHdrHelp:                             "सहायता",
     btnHdrRefresh:                          "रीफ़्रेश करें",
     tipHdrRefresh:                          "फ़ोल्डर को फिर से स्कैन करें",
@@ -4297,7 +4641,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "हल्का",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "ड्रैग-एंड-ड्रॉप के माध्यम से वीडियो शॉट फ़ाइलों को अनुक्रमित और पुन: क्रमांकित करें।",
+    msgStgAboutDesc:                        "वीडियो शॉट्स को खींचकर पुनर्व्यवस्थित करें, और ऐप डिस्क पर हर फ़ाइल को मिलान करने के लिए फिर से नंबर देगा।",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "अध्याय",
@@ -4365,11 +4709,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "আবার দেখাবেন না",
     btnNewsOpenLink:                        "আরও জানুন",
     tipNewsDismiss:                         "বন্ধ করুন",
+    tipNewsShow:                            "খবর",
     lblStgGeneralNews:                      "yaiol থেকে খবর দেখান",
     btnNewsClose:                           "বন্ধ করুন",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "সেটিংস খুলুন",
+    tipHdrSettings:                         "সেটিংস",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "ছোট করুন",
+    tipWinMaximize:                         "বড় করুন",
+    tipWinRestore:                          "পুনরুদ্ধার করুন",
+    tipWinClose:                            "বন্ধ করুন",
+
     tipHdrHelp:                             "সাহায্য",
     btnHdrRefresh:                          "রিফ্রেশ করুন",
     tipHdrRefresh:                          "ফোল্ডার পুনরায় স্ক্যান করুন",
@@ -4398,7 +4750,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "হালকা",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "ড্র্যাগ-এন্ড-ড্রপ ব্যবহার করে ভিডিও শট ফাইলগুলির ক্রম এবং পুনরায় নম্বর দিন।",
+    msgStgAboutDesc:                        "ভিডিও শটগুলি টেনে পুনরায় সাজান, এবং অ্যাপটি ডিস্কের প্রতিটি ফাইলকে মিলানোর জন্য পুনরায় নম্বর দেবে।",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "অধ্যায়",
@@ -4466,11 +4818,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "دوبارہ نہ دکھائیں",
     btnNewsOpenLink:                        "مزید جانیں",
     tipNewsDismiss:                         "بند کریں",
+    tipNewsShow:                            "خبریں",
     lblStgGeneralNews:                      "yaiol سے خبریں دکھائیں",
     btnNewsClose:                           "بند کریں",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "ترتیبات کھولیں",
+    tipHdrSettings:                         "ترتیبات",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "چھوٹا کریں",
+    tipWinMaximize:                         "بڑا کریں",
+    tipWinRestore:                          "بحال کریں",
+    tipWinClose:                            "بند کریں",
+
     tipHdrHelp:                             "مدد",
     btnHdrRefresh:                          "ریفریش کریں",
     tipHdrRefresh:                          "فولڈر کو دوبارہ اسکین کریں",
@@ -4499,7 +4859,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "ہلکا",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "ڈریگ اینڈ ڈراپ کے ذریعے ویڈیو شاٹ فائلوں کو ترتیب دیں اور دوبارہ نمبر دیں۔",
+    msgStgAboutDesc:                        "اپنی ویڈیو شاٹس کو گھسیٹ کر دوبارہ ترتیب دیں، اور ایپ ڈسک پر موجود ہر فائل کو مماثل کرنے کے لیے دوبارہ نمبر دے گی۔",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "باب",
@@ -4567,11 +4927,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Usionyeshe tena",
     btnNewsOpenLink:                        "Jifunze zaidi",
     tipNewsDismiss:                         "Funga",
+    tipNewsShow:                            "Habari",
     lblStgGeneralNews:                      "Onyesha habari kutoka yaiol",
     btnNewsClose:                           "Funga",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Fungua mipangilio",
+    tipHdrSettings:                         "Mipangilio",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Punguza",
+    tipWinMaximize:                         "Ongeza",
+    tipWinRestore:                          "Rejesha",
+    tipWinClose:                            "Funga",
+
     tipHdrHelp:                             "Msaada",
     btnHdrRefresh:                          "Onyesha upya",
     tipHdrRefresh:                          "Changanua upya folda",
@@ -4600,7 +4968,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Nuru",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "Panga na ubadilishe nambari za faili za video kwa kuburuta na kuacha.",
+    msgStgAboutDesc:                        "Panga upya picha zako za video kwa kuburuta, na programu itabadilisha nambari ya kila faili kwenye diski ili ilingane.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Sura",
@@ -4668,11 +5036,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "ਦੁਬਾਰਾ ਨਾ ਦਿਖਾਓ",
     btnNewsOpenLink:                        "ਹੋਰ ਜਾਣੋ",
     tipNewsDismiss:                         "ਬੰਦ ਕਰੋ",
+    tipNewsShow:                            "ਖ਼ਬਰਾਂ",
     lblStgGeneralNews:                      "yaiol ਤੋਂ ਖ਼ਬਰਾਂ ਦਿਖਾਓ",
     btnNewsClose:                           "ਬੰਦ ਕਰੋ",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "ਸੈਟਿੰਗਾਂ ਖੋਲ੍ਹੋ",
+    tipHdrSettings:                         "ਸੈਟਿੰਗਾਂ",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "ਛੋਟਾ ਕਰੋ",
+    tipWinMaximize:                         "ਵੱਡਾ ਕਰੋ",
+    tipWinRestore:                          "ਮੁੜ-ਬਹਾਲ ਕਰੋ",
+    tipWinClose:                            "ਬੰਦ ਕਰੋ",
+
     tipHdrHelp:                             "ਮਦਦ",
     btnHdrRefresh:                          "ਰੀਫ੍ਰੈਸ਼ ਕਰੋ",
     tipHdrRefresh:                          "ਫੋਲਡਰ ਨੂੰ ਮੁੜ-ਸਕੈਨ ਕਰੋ",
@@ -4701,7 +5077,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "ਹਲਕਾ",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "ਡਰੈਗ-ਐਂਡ-ਡ੍ਰੌਪ ਰਾਹੀਂ ਵੀਡੀਓ ਸ਼ਾਟ ਫਾਈਲਾਂ ਨੂੰ ਕ੍ਰਮਬੱਧ ਅਤੇ ਮੁੜ-ਨੰਬਰ ਦਿਓ।",
+    msgStgAboutDesc:                        "ਆਪਣੇ ਵੀਡੀਓ ਸ਼ਾਟਸ ਨੂੰ ਖਿੱਚ ਕੇ ਮੁੜ-ਤਰਤੀਬ ਦਿਓ, ਅਤੇ ਐਪ ਡਿਸਕ 'ਤੇ ਹਰੇਕ ਫਾਈਲ ਨੂੰ ਮੇਲ ਕਰਨ ਲਈ ਮੁੜ-ਨੰਬਰ ਦੇਵੇਗਾ।",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "ਅਧਿਆਇ",
@@ -4769,11 +5145,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Kada a sake nunawa",
     btnNewsOpenLink:                        "Koyi game da shi",
     tipNewsDismiss:                         "Rufe",
+    tipNewsShow:                            "Labarai",
     lblStgGeneralNews:                      "Nuna labarai daga yaiol",
     btnNewsClose:                           "Rufe",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Bude saituna",
+    tipHdrSettings:                         "Saituna",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Rage girma",
+    tipWinMaximize:                         "Ƙara girma",
+    tipWinRestore:                          "Mayar",
+    tipWinClose:                            "Rufe",
+
     tipHdrHelp:                             "Taimako",
     btnHdrRefresh:                          "Sake sabuntawa",
     tipHdrRefresh:                          "Sake duba fayil",
@@ -4802,7 +5186,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Haske",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "Tsara da sake lambobi fayilolin bidiyo ta hanyar ja-da-sauke.",
+    msgStgAboutDesc:                        "Sake tsara hotunan bidiyon ku ta hanyar ja, kuma app ɗin zai sake lissafa kowane fayil a kan diski don dacewa.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Babi",
@@ -4870,11 +5254,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Maṣe fi han mọ",
     btnNewsOpenLink:                        "Kọ́ ẹ̀kọ́ síwájú",
     tipNewsDismiss:                         "Pa",
+    tipNewsShow:                            "Ìròyìn",
     lblStgGeneralNews:                      "Fi iroyin lati yaiol han",
     btnNewsClose:                           "Pade",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Ṣi eto",
+    tipHdrSettings:                         "Ètò",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Din-kekere",
+    tipWinMaximize:                         "Din-nla",
+    tipWinRestore:                          "Mu pada",
+    tipWinClose:                            "Pa",
+
     tipHdrHelp:                             "Iranlọwọ",
     btnHdrRefresh:                          "Tuntun",
     tipHdrRefresh:                          "Tun ṣe ayẹwo folda",
@@ -4903,7 +5295,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Fẹ́lẹ́fẹ́lẹ́",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "Tẹle ati tun nọmba awọn faili fidio nipasẹ fifa-ati-silẹ.",
+    msgStgAboutDesc:                        "Tunto awọn aworan fidio rẹ nipa fifa, ati pe ohun elo naa yoo tun ka nọmba gbogbo faili lori disiki lati baamu.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Ori",
@@ -4971,11 +5363,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "మళ్ళీ చూపవద్దు",
     btnNewsOpenLink:                        "మరింత తెలుసుకోండి",
     tipNewsDismiss:                         "మూసివేయండి",
+    tipNewsShow:                            "వార్తలు",
     lblStgGeneralNews:                      "yaiol నుండి వార్తలను చూపించు",
     btnNewsClose:                           "మూసివేయి",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "సెట్టింగ్‌లను తెరవండి",
+    tipHdrSettings:                         "సెట్టింగ్‌లు",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "చిన్నది చేయి",
+    tipWinMaximize:                         "పెద్దది చేయి",
+    tipWinRestore:                          "పునరుద్ధరించు",
+    tipWinClose:                            "మూసివేయి",
+
     tipHdrHelp:                             "సహాయం",
     btnHdrRefresh:                          "తాజాకరించు",
     tipHdrRefresh:                          "ఫోల్డర్‌ను మళ్లీ స్కాన్ చేయండి",
@@ -5004,7 +5404,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "లేత",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "డ్రాగ్-అండ్-డ్రాప్ ద్వారా వీడియో షాట్ ఫైల్‌లను క్రమబద్ధీకరించండి మరియు తిరిగి నంబర్ చేయండి.",
+    msgStgAboutDesc:                        "మీ వీడియో షాట్‌లను లాగడం ద్వారా మళ్లీ ఆర్డర్ చేయండి, మరియు యాప్ డిస్క్‌లోని ప్రతి ఫైల్‌ను సరిపోల్చడానికి మళ్లీ నంబర్ చేస్తుంది.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "అధ్యాయం",
@@ -5072,11 +5472,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "पुन्हा दाखवू नका",
     btnNewsOpenLink:                        "अधिक जाणून घ्या",
     tipNewsDismiss:                         "बंद करा",
+    tipNewsShow:                            "बातम्या",
     lblStgGeneralNews:                      "yaiol कडून बातम्या दाखवा",
     btnNewsClose:                           "बंद करा",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "सेटिंग्ज उघडा",
+    tipHdrSettings:                         "सेटिंग्ज",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "लहान करा",
+    tipWinMaximize:                         "मोठे करा",
+    tipWinRestore:                          "पुनर्संचयित करा",
+    tipWinClose:                            "बंद करा",
+
     tipHdrHelp:                             "मदत",
     btnHdrRefresh:                          "रिफ्रेश करा",
     tipHdrRefresh:                          "फोल्डर पुन्हा स्कॅन करा",
@@ -5105,7 +5513,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "हलका",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "ड्रॅग-अँड-ड्रॉपद्वारे व्हिडिओ शॉट फाइल्सची क्रमवारी लावा आणि पुन्हा क्रमांकित करा.",
+    msgStgAboutDesc:                        "तुमचे व्हिडिओ शॉट्स ड्रॅग करून पुन्हा क्रमवारी लावा, आणि ॲप डिस्कवरील प्रत्येक फाइलला जुळण्यासाठी पुन्हा क्रमांकित करेल.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "अध्याय",
@@ -5173,11 +5581,19 @@ const TRANSLATIONS = {
     lblNewsHideForever:                     "Huwag nang ipakita muli",
     btnNewsOpenLink:                        "Matuto pa",
     tipNewsDismiss:                         "Isara",
+    tipNewsShow:                            "Balita",
     lblStgGeneralNews:                      "Ipakita ang balita mula sa yaiol",
     btnNewsClose:                           "Isara",
 
     // Prefix:Hdr - Scope:top toolbar
-    tipHdrSettings:                         "Buksan ang mga setting",
+    tipHdrSettings:                         "Mga Setting",
+
+    // Prefix:Win - Scope:window bar (the app's own title bar)
+    tipWinMinimize:                         "Paliitin",
+    tipWinMaximize:                         "Palakihin",
+    tipWinRestore:                          "Ibalik",
+    tipWinClose:                            "Isara",
+
     tipHdrHelp:                             "Tulong",
     btnHdrRefresh:                          "I-refresh",
     tipHdrRefresh:                          "I-scan muli ang folder",
@@ -5206,7 +5622,7 @@ const TRANSLATIONS = {
     btnStgGeneralThemeLight:                "Maliwanag",
 
     // Prefix:StgAbout - Scope:settings view (About tab)
-    msgStgAboutDesc:                        "Pagkakasunod-sunod at muling pagbibigay ng numero sa mga file ng video shot sa pamamagitan ng drag-and-drop.",
+    msgStgAboutDesc:                        "Ayusin muli ang iyong mga video shot sa pamamagitan ng pag-drag, at muling bibigyan ng numero ng app ang bawat file sa disk upang tumugma.",
 
     // Prefix:Chapter - Scope:per-chapter section in main view
     lblChapter:                             "Kabanata",
