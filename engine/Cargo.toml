@@ -1,0 +1,10 @@
+[package]
+name = "video-shot-sequencer-engine"
+version = "0.1.0"
+edition = "2024"
+
+# ⚠ The library name is FIXED at `engine`, whatever the package is called: the package name
+# carries the app id and changes on scaffold, and a crate name is a code identifier, so letting it
+# vary would rewrite `.rs` source on every rename. The app imports it as `engine::…`.
+[lib]
+name = "engine"

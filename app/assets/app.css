@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+/* App-specific styles only. The palette and every shared class come from the catalog CSS files that load
+   before this one; the two colours defined here are this app's own. */
+:root, :root[data-theme="light"] { --bg-thumb: #dde1ec; --locked: #1a8ac1; }
+:root[data-theme="dark"]         { --bg-thumb: #0a0b10; --locked: #6bc8ff; }
+
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--uis-bg);
+  color: var(--uis-text);
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+.vs-mono { font-family: 'JetBrains Mono', 'Fira Code', monospace; }
+
+
+
+/* ─── Main scroll area ───────────────────────────────────────────────── */
+.vs-workspace {
+  padding: 16px 20px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+.vs-main-col {
+  flex: 1;
+  min-width: 0;
+}
+.vs-unmatched-col {
+  width: 320px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 0; /* .vs-workspace is the scroll container now, already below the header */
+  max-height: calc(100vh - 112px);
+  overflow-y: auto;
+}
+@media (max-width: 1100px) {
+  .vs-unmatched-col { width: 240px; }
+}
+
+/* ─── Chapter section ────────────────────────────────────────────────── */
+.vs-chapter {
+  margin-bottom: 18px;
+  background: var(--uis-bg-elev);
+  border: 1px solid var(--uis-border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.vs-chapter.vs-locked { border-color: var(--locked); box-shadow: 0 0 0 1px rgba(107,200,255,.15) inset; }
+.vs-chapter.vs-reorder-before { box-shadow: 0 -3px 0 var(--uis-accent); }
+.vs-chapter.vs-reorder-after  { box-shadow: 0  3px 0 var(--uis-accent); }
+.vs-chapter-head {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 14px;
+  background: linear-gradient(180deg, rgba(255,255,255,.02), transparent);
+  border-bottom: 1px solid var(--uis-border);
+  user-select: none;
+}
+.vs-chapter-head .vs-grip { cursor: grab; color: var(--uis-text-mute); font-size: 18px; line-height: 1; }
+.vs-chapter-head .vs-grip:active { cursor: grabbing; }
+.vs-chapter-head .vs-collapse-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 4px 6px; border-radius: 4px;
+  background: var(--uis-bg-row); border: 1px solid var(--uis-border-strong);
+  color: var(--uis-text-dim); cursor: pointer;
+}
+.vs-chapter-head .vs-collapse-btn:hover { color: var(--uis-text); }
+.vs-chapter.vs-collapsed .vs-chapter-head { border-bottom: none; }
+.vs-chapter-head .vs-label { font-weight: 700; letter-spacing: .3px; }
+.vs-chapter-head .vs-chapter-count { color: var(--uis-text-mute); font-size: 12px; }
+.vs-chapter-head-actions {
+  margin-left: auto;
+  display: inline-flex; align-items: center; gap: 6px;
+}
+
+.vs-chapter-head .vs-gap-badge {
+  font-size: 11px; color: var(--uis-warn);
+  background: rgba(196,122,19,.12); border: 1px solid rgba(196,122,19,.35);
+  padding: 1px 8px; border-radius: 4px;
+  font-family: 'JetBrains Mono', monospace;
+}
+.vs-chapter-body { padding: 6px; }
+.vs-chapter.vs-drop-target .vs-chapter-body { background: rgba(124,111,255,.06); }
+
+/* ─── Shot row ────────────────────────────────────────────────────────── */
+.vs-shot {
+  display: flex; align-items: center; gap: 10px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  margin: 2px 0;
+  background: var(--uis-bg-row);
+  border: 1px solid transparent;
+  transition: background .1s, border-color .1s, transform .08s;
+}
+.vs-shot:hover  { background: var(--uis-bg-hov); }
+.vs-shot.vs-dragging { opacity: .35; }
+.vs-shot.vs-drop-before { border-top-color: var(--uis-accent); box-shadow: 0 -2px 0 var(--uis-accent); }
+.vs-shot.vs-drop-after  { border-bottom-color: var(--uis-accent); box-shadow: 0 2px 0 var(--uis-accent); }
+.vs-shot.vs-drop-into   { border-color: var(--uis-accent); background: rgba(124,111,255,.12); }
+
+.vs-thumb { cursor: grab; }
+.vs-thumb:active { cursor: grabbing; }
+.vs-thumb.vs-drop-before-thumb { box-shadow: -2px 0 0 var(--uis-accent); }
+.vs-thumb.vs-drop-after-thumb  { box-shadow:  2px 0 0 var(--uis-accent); }
+
+.vs-shot .vs-grip {
+  cursor: grab; color: var(--uis-text-mute); font-size: 18px; line-height: 1;
+  padding: 4px 2px;
+}
+.vs-shot .vs-grip:active { cursor: grabbing; }
+.vs-shot .vs-id {
+  font-family: 'JetBrains Mono', monospace; font-weight: 600;
+  font-size: 16px; color: var(--uis-text);
+  min-width: 84px;
+  letter-spacing: .5px;
+}
+.vs-shot .vs-id .vs-dim { color: var(--uis-text-mute); }
+.vs-shot .vs-thumbs { display: flex; gap: 6px; flex: 1; flex-wrap: wrap; }
+.vs-shot .vs-meta {
+  font-size: 11px; color: var(--uis-text-mute);
+  min-width: 120px; text-align: right;
+}
+.vs-shot .vs-meta .vs-alts { color: var(--uis-text-dim); }
+
+.vs-thumb {
+  width: 96px; height: 64px;
+  background: var(--bg-thumb);
+  border: 1px solid var(--uis-border);
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.vs-thumb img, .vs-thumb video {
+  width: 100%; height: 100%; object-fit: cover;
+}
+.vs-thumb .vs-badge {
+  position: absolute; top: 2px; left: 2px;
+  font-family: 'JetBrains Mono', monospace; font-size: 10px;
+  background: rgba(0,0,0,.7); color: white;
+  padding: 1px 4px; border-radius: 3px;
+}
+.vs-thumb .vs-ext {
+  position: absolute; bottom: 2px; right: 2px;
+  font-family: 'JetBrains Mono', monospace; font-size: 9px;
+  background: rgba(0,0,0,.7); color: white;
+  padding: 1px 4px; border-radius: 3px; text-transform: uppercase;
+}
+.vs-thumb .vs-extra {
+  position: absolute; bottom: 2px; left: 2px;
+  font-size: 9px;
+  background: rgba(0,0,0,.7); color: var(--uis-text-dim);
+  padding: 1px 4px; border-radius: 3px;
+  max-width: 70%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.vs-thumb .vs-preview-btn {
+  position: absolute; top: 2px; right: 2px;
+  width: 22px; height: 22px;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(0,0,0,.7); color: white;
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 50%;
+  font-size: 10px; line-height: 1;
+  cursor: pointer;
+  opacity: 0; transition: opacity .12s, background .12s;
+  padding: 0;
+}
+.vs-thumb:hover .vs-preview-btn { opacity: 1; }
+.vs-thumb .vs-preview-btn:hover { background: var(--uis-accent); }
+
+/* ─── Pile (stacked same-V files) ─────────────────────────────────────── */
+.vs-pile {
+  position: relative;
+  width: 96px; height: 64px;
+  flex-shrink: 0;
+  cursor: grab;
+  /* Back cards offset horizontally and may extend beyond width - let them show. */
+  overflow: visible;
+  margin-right: 12px; /* room for the deepest back-card peek so siblings don't overlap */
+}
+.vs-pile:active { cursor: grabbing; }
+.vs-pile-card {
+  position: absolute; top: 0; left: 0;
+  width: 96px; height: 64px;
+  background: var(--bg-thumb);
+  border: 1px solid var(--uis-border);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.vs-pile-card.vs-pile-back {
+  background: var(--uis-bg-hov);
+}
+.vs-pile-card.vs-pile-front {
+  display: flex; align-items: center; justify-content: center;
+}
+.vs-pile-card.vs-pile-front img, .vs-pile-card.vs-pile-front video {
+  width: 100%; height: 100%; object-fit: cover;
+}
+.vs-pile-card.vs-pile-front .vs-badge,
+.vs-pile-card.vs-pile-front .vs-ext,
+.vs-pile-card.vs-pile-front .vs-preview-btn { position: absolute; }
+.vs-pile-card.vs-pile-front .vs-badge { top: 2px; left: 2px;
+  font-family: 'JetBrains Mono', monospace; font-size: 10px;
+  background: rgba(0,0,0,.7); color: white; padding: 1px 4px; border-radius: 3px;
+}
+.vs-pile-card.vs-pile-front .vs-ext { bottom: 2px; right: 2px;
+  font-family: 'JetBrains Mono', monospace; font-size: 9px;
+  background: rgba(0,0,0,.7); color: white; padding: 1px 4px; border-radius: 3px; text-transform: uppercase;
+}
+.vs-pile-card.vs-pile-front .vs-preview-btn { top: 2px; right: 2px;
+  width: 22px; height: 22px;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(0,0,0,.7); color: white;
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 50%; font-size: 10px; line-height: 1; cursor: pointer;
+  opacity: 0; transition: opacity .12s, background .12s; padding: 0;
+}
+.vs-pile:hover .vs-pile-card.vs-pile-front .vs-preview-btn { opacity: 1; }
+.vs-pile-card.vs-pile-front .vs-preview-btn:hover { background: var(--uis-accent); }
+.vs-pile-count {
+  position: absolute; bottom: 2px; left: 2px;
+  font-size: 10px; font-weight: 700;
+  background: var(--uis-accent); color: white;
+  padding: 1px 5px; border-radius: 3px;
+}
+.vs-pile.vs-drop-before-thumb { box-shadow: -2px 0 0 var(--uis-accent); }
+.vs-pile.vs-drop-after-thumb  { box-shadow:  2px 0 0 var(--uis-accent); }
+
+/* ─── Add chapter row ─────────────────────────────────────────────────── */
+.vs-add-chapter-row {
+  display: flex; justify-content: center;
+  margin: 12px 0 8px;
+}
+
+/* ─── Unmatched section ───────────────────────────────────────────────── */
+.vs-unmatched {
+  padding: 12px 14px;
+  background: rgba(255,184,107,.06);
+  border: 1px dashed var(--uis-warn);
+  border-radius: 8px;
+}
+.vs-unmatched h3 { margin: 0 0 10px; color: var(--uis-warn); font-size: 13px; font-weight: 600; }
+.vs-unmatched-hint { color: var(--uis-text-mute); font-size: 11px; font-weight: 400; }
+.vs-unmatched-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 8px;
+}
+.vs-unmatched-card {
+  background: var(--uis-bg-row);
+  border: 1px solid var(--uis-border);
+  border-radius: 6px;
+  padding: 6px;
+  cursor: grab;
+  display: flex; flex-direction: column; gap: 6px;
+  transition: background .1s, border-color .1s, transform .08s;
+}
+.vs-unmatched-card:hover { background: var(--uis-bg-hov); border-color: var(--uis-border-strong); }
+.vs-unmatched-card:active { cursor: grabbing; }
+.vs-unmatched-card .vs-thumb { width: 100%; height: 78px; }
+.vs-unmatched-name {
+  font-size: 11px; color: var(--uis-text-dim);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+
+
+/* ─── Dragging (done with the pointer, in the page) ───────────────────── */
+.vs-workspace { user-select: none; }
+.vs-dragging-on, .vs-dragging-on * { cursor: grabbing !important; }
